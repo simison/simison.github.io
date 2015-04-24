@@ -1,0 +1,71 @@
+{% capture root_url %}{{ site.root | strip_slash }}{% endcapture %}
+<!DOCTYPE html>
+<html lang="en" ng-app="mikael" ng-controller="mainCtrl">
+<head>
+  <meta charset="utf-8">
+  <title>{% if page.title %}{% if site.titlecase %}{{ page.title | titlecase }}{% else %}{{ page.title }}{% endif %}{% endif %}</title>
+  <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1">
+  <meta name="viewport" content="minimal-ui">
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+  <meta property="og:title" content="{% if page.title %}{% if site.titlecase %}{{ page.title | titlecase }}{% else %}{{ page.title }}{% endif %}{% endif %}">
+  <meta property="og:site_name" content="{{ site.title }}">
+  <meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+  <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+  <meta property="og:type" content="website">
+  {% if page.og_image %}<meta property="og:image" content="{{ site.url }}/covers/{{ page.og_image }}">{% endif %}
+  {% if page.cover_image %}<meta property="og:image" content="{{ site.url }}/covers/{{ page.cover_image }}">{% endif %}
+  <meta property="og:image" content="{{ site.url }}/assets/img/badge.jpg">
+  {% if site.facebook_app_id %}<meta property="fb:app_id" content="{{ site.facebook_app_id }}">{% endif %}
+  {% if site.facebook_admins %}<meta property="fb:admins" content="{{ site.facebook_admins }}">{% endif %}
+  <meta name="twitter:title" content="{% if page.title %}{% if site.titlecase %}{{ page.title | titlecase }}{% else %}{{ page.title }}{% endif %}{% endif %}">
+  <meta name="twitter:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+  <meta name="twitter:url" content="{{site.url}}">
+  {% if page.og_image %}
+    <meta name="twitter:image" content="{{ site.url }}/covers/{{ page.og_image }}">
+  {% else if page.cover_image %}
+    <meta name="twitter:image" content="{{ site.url }}/covers/{{ page.cover_image }}">
+  {% else %}
+    <meta name="twitter:image" content="{{ site.url }}/assets/img/badge.jpg">
+  {% endif %}
+  <meta name="twitter:creator" content="{{site.twitter_username}}">
+  <meta name="author" content="{{ site.author }}">
+  <!--[if lt IE 9]>
+    <script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <![endif]-->
+  <link rel="profile" href="http://microformats.org/profile/hcard">
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
+  <link rel="shortcut icon" href="{{ root_url }}/assets/img/favicon.png" type="image/png" />
+  <link rel="bookmark icon" href="{{ root_url }}/assets/img/favicon.png" type="image/png" />
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600;Noto+Serif:400" type="text/css">
+  <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}?c={{ site.time | date_to_xmlschema | cgi_escape }}">
+  <link rel="stylesheet" href="{{ root_url }}/assets/fontello/css/glyphs.css" type="text/css">
+  {% if site.facebook_like %}<link rel="dns-prefetch" href="//connect.facebook.net" />{% endif %}
+  {% include scripts/google_analytics.html %}
+</head>
+<body class="scrolling-{{ "{{ scrolling " }}}}"{% if page.body_id %} id="{{ page.body_id }}"{% endif %}>
+
+  <nav id="navigation">
+    <div id="navigation-bg"></div>
+    <ul>
+      <li><a class="menuitem menuitem-me" href="{{ root_url }}/">Me</a></li>
+      <li><a class="menuitem menuitem-blog" href="{{ root_url }}/blog">Blog</a></li>
+      <li><a class="menuitem menuitem-media" href="{{ root_url }}/media">In media</a></li>
+      <li><a class="menuitem menuitem-volunteering" href="{{ root_url }}/volunteering">Volunteering</a></li>
+      <li><a class="menuitem menuitem-cv" href="{{ root_url }}/cv">CV</a></li>
+      <li><a class="menuitem menuitem-portfolio" href="{{ root_url }}/portfolio">Portfolio</a></li>
+    </ul>
+  </nav>
+
+  <div ui-keydown="{esc: 'card=false'}" tabindex="0">
+    {{ content | expand_urls: root_url }}
+  </div>
+
+  <script src="{{ root_url }}/js/app.min.js?c={{ site.time | date_to_xmlschema | cgi_escape }}" type="text/javascript"></script>
+</body>
+</html>

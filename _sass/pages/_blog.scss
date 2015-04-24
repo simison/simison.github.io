@@ -1,0 +1,271 @@
+
+body#blog-index {
+    .container {
+        background: transparent;
+        .main .content {
+            float: none;
+            line-height: 25px;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+            color: #fff;
+            text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+            a {
+                color: #fff;
+            }
+            hr {
+                width: 20%;
+                background: #fff;
+                border-color: #fff;
+                margin-top: 100px;
+                margin-bottom: 100px;
+            }
+        }
+    }
+    .entry-excerpt {
+        @extend .lead;
+    }
+    .entry-title {
+        @extend .article-title-font;
+        font-size: 35px;
+        line-height: 40px;
+    }
+    .entry-date,
+    .entry-meta {
+        font-size: 12px;
+        line-height: 13px;
+        @include opacity(0.7);
+        display: block;
+        clear: both;
+    }
+    .entry-date {
+        padding: 0 0 20px 0;
+    }
+    .entry-meta {
+        padding: 20px 0 0 0;
+    }
+    #cover {
+        & > div {
+            background-position: 50% 25%;
+        }
+    }
+    #page-header {
+        .title {
+            max-width: 500px;
+            height: 350px;
+        }
+        h1 {
+            font-size: 50px;
+            line-height: 65px;
+        }
+    }
+}
+
+/*
+ * Archive list
+ * This is a section under #blog-index so just marking those changes
+ * Rest of this is at /partials/_archive.scss
+ */
+#blog-archives {
+    .container {
+        .main {
+            padding-top: 0;
+            .content {
+                text-align: left;
+            }
+        }
+    }
+}
+
+
+
+body#blog-article {
+    .container .main .content {
+        float: none;
+        line-height: 27px;
+        font-size: 17px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: left;
+        blockquote {
+          font-size: 17px;
+          line-height: 27px;
+        }
+        hr {
+            width: 20%;
+        }
+        h4 {
+          @extend .title-font;
+          font-size: 17px;
+          line-height: 27px;
+          text-transform: none;
+        }
+        h3 {
+          @extend .title-font;
+          font-size: 18px;
+          line-height: 28px;
+          padding-top: 0.8em;
+          padding-bottom: 0.4em;
+        }
+        h2 {
+          @extend .title-font;
+          font-size: 27px;
+          line-height: 33px;
+          text-transform: none !important; /* @todo */
+          padding-top: 0.8em;
+          padding-bottom: 0.4em;
+        }
+    }
+    #page-header {
+        text-align: left;
+        .title {
+            height: 250px;
+            hr {
+                margin-left: 0;
+                margin-right: 0;
+            }
+        }
+        h1 {
+            font-size: 55px;
+            line-height: 60px;
+            @extend .article-title-font;
+        }
+    }
+
+    /*
+     * Blog article contents
+     */
+    .entry-meta {
+        margin: 50px 0;
+        clear: both;
+        text-transform: uppercase;
+        font-size: 14px;
+        line-height: 16px;
+        text-align: center;
+        color: $text-color-lighter;
+        letter-spacing: 1px;
+        a {
+            color: $text-color-lighter;
+            &:hover,
+            &:active {
+                text-decoration: underline;
+            }
+        }
+    }
+    .entry-sharing {
+        clear: both;
+        text-align: center;
+        line-height: 10px; /* Align buttons fix */
+    }
+    .entry-categories,
+    .entry-photo-credit {
+        clear: both;
+        display: block;
+        text-transform: none;
+        letter-spacing: 0;
+        margin: 10px 100px;
+    }
+    .entry-photo-credit {
+        font-size: 12px;
+        line-height: 14px;
+    }
+    .entry-categories {
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    /*
+    .entry-author,
+    .entry-date,
+    .entry-categories,
+    .entry-photo-credit {
+
+    }
+    */
+}
+
+
+#blog-subscribe {
+    .title {
+        max-width: 650px;
+        height: 250px;
+    }
+    h1 {
+        font-size: 40px;
+        line-height: 45px;
+    }
+    #mc_embed_signup {
+        width: 310px;
+        margin: 0 0 30px 0;
+        clear: both;
+        overflow: hidden;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #mce-EMAIL {
+      border: 0;
+    }
+    #mc-embedded-subscribe,
+    .mc-field-group {
+        float: left;
+    }
+    @media only screen and (min-width: 481px) {
+      #mce-EMAIL {
+        @include border-left-radius($border-radius-base);
+      }
+      #mc-embedded-subscribe {
+        @include border-left-radius(0);
+      }
+    }
+    @media only screen and (max-width: 480px) {
+        h1 {
+            font-size: 25px;
+            line-height: 30px;
+        }
+        #mc_embed_signup {
+            width: 100%;
+            margin: 0;
+        }
+        #mce-EMAIL {
+          border-radius: $border-radius-base;
+        }
+        #mc-embedded-subscribe,
+        .mc-field-group {
+            float: none;
+            clear: both;
+            margin: 0 auto 10px auto;
+        }
+    }
+}
+
+/* Subscribe as a section instead of whole page */
+body#blog-article,
+body#blog-index {
+    #blog-subscribe {
+        box-shadow: 0 0 15px rgba(0,0,0,0.2);
+        color: #fff;
+        text-align: center;
+        hr {
+            width: 20%;
+            background: #fff;
+            border-color: #fff;
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+        background-repeat: no-repeat;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        background-size: cover;
+        background-position: center bottom;
+        background-image: url(/covers/northpole.jpg);
+        padding: 100px;
+        @media only screen and (max-width: 480px) {
+            padding: 50px;
+        }
+        @media
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi) {
+            background-image: url(/covers/northpole@2x.jpg);
+        }
+    }
+}

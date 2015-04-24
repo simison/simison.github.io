@@ -1,0 +1,46 @@
+---
+layout: default
+title: Blog Archive
+body_id: "blog-index"
+---
+
+<div id="cover" resizable ng-style="{ height: windowHeight }">
+  <div style="background-image: url('{{ root_url }}/covers/portugal-sea.jpg')" resizable ng-style="{ height: windowHeight }"></div>
+  <div id="cover-dark" resizable ng-style="{ height: windowHeight }"></div>
+  <div id="cover-blur" style="background-image: url('{{ root_url }}/covers/portugal-sea-blur.jpg')" resizable ng-style="{ height: windowHeight }"></div>
+</div>
+
+<header id="page-header">
+  <div class="title">
+    <h1>Blog Archives</h1>
+    <hr>
+    <a href="{{ root_url }}/blog/" tt title="Bring me back!"><i class="icon-left"></i> Back to blog</a>
+  </div>
+  <button class="down" ng-click="goToContent()"></button>
+</header>
+
+<div class="container">
+  <article class="main">
+    <div class="content">
+
+      <div id="blog-archives">
+      {% for post in site.posts reverse %}
+      {% capture this_year %}{{ post.date | date: "%Y" }}{% endcapture %}
+      {% unless year == this_year %}
+        {% assign year = this_year %}
+        <h2>{{ year }}</h2>
+      {% endunless %}
+      <article>
+        {% include archive_post.html %}
+      </article>
+      {% endfor %}
+      </div>
+
+      <div class="text-centered">
+        <hr>
+        <a href="{{ root_url }}/blog/"><i class="icon-left"></i> Back to Blog</a>
+      </div>
+
+    </div>
+  </article>
+</div>

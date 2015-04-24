@@ -1,0 +1,20 @@
+---
+layout: default
+title: Subscribe to Blog posts
+body_id: "blog-subscribe"
+---
+
+<div id="cover" resizable ng-style="{ height: windowHeight }">
+  <div style="background-image: url('{{ root_url }}/covers/northpole.jpg')" resizable ng-style="{ height: windowHeight }"></div>
+</div>
+
+<header id="page-header">
+<div class="title">
+
+  {% include blog_subscribe.html %}
+
+  <br/><br/>
+  <a href="{{ root_url }}/blog/" tt title="Yo, Back 2 Blog!"><i class="icon-left"></i> Back to blog</a>
+
+</div>
+</header>

@@ -1,0 +1,12 @@
+{% if page.date %}
+<span class="entry-date">
+  {{ page.date | date: "%b %-d, %Y" }}
+  {% if updated %}<span class="updated">{{ page.updated | date: "%b %-d, %Y" }}</span>{% endif %}
+</span>
+{% endif %}
+
+{% if post.date %}
+<span class="entry-date">
+  {{ post.date | date: "%b %-d, %Y" }}
+</span>
+{% endif %}

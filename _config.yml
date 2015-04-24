@@ -1,0 +1,59 @@
+# Site settings
+title: "Mikael Korpela"
+subtitle: "Modern nomad, an activist and a friend."
+description: "I'm a modern nomad, a free economy activist and a friend."
+email: "mikael@ihminen.org"
+author: Mikael
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://www.mikaelkorpela.fi" # the base hostname & protocol for your site
+
+# Build settings
+markdown: kramdown
+sass:
+    style: :compressed
+exclude:
+  - "LICENSE"
+  - "README.md"
+  - "gruntfile.coffee"
+  - "package.json"
+  - "node_modules"
+  - "bower.json"
+  - "bower_components"
+  - "Rakefile"
+  - "_js"
+#permalink: /blog/:year/:month/:day/:title/
+permalink: /blog/:title/
+category_dir: blog/categories
+paginate: 10          # Posts per page on the blog index
+paginate_path: "posts/:num"  # Directory base for pagination URLs eg. /posts/2/
+excerpt_link: "Read on"  # "Continue reading" link text at the bottom of excerpted articles
+excerpt_separator: "<!--more-->"
+# Default date format is "ordinal" (resulting in "July 22nd 2007")
+# You can customize the format as defined in
+# http://www.ruby-doc.org/core-1.9.2/Time.html#method-i-strftime
+# Additionally, %o will give you the ordinal representation of the day
+#date_format: "ordinal"
+date_format: "%d. %B %Y"
+
+
+# Disqus Comments
+disqus_short_name: "mikaelkorpela"
+disqus_show_comment_count: false
+
+# Like buttons
+twitter_btn: true
+facebook_btn: true
+googleplus_btn: true
+
+# Twitter
+twitter_username: simison
+
+# Facebook
+facebook_app_id: "105522896143570"
+facebook_admins: "600923739"
+facebook_lang: "en_US"
+
+# Google Analytics
+google_analytics_tracking_id: "UA-149779-12"
+
+subscribe_email: /blog/subscribe/

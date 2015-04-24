@@ -1,0 +1,106 @@
+#archive {
+  #content > div { &, > article { padding-top: 0; } }
+}
+#blog-archives {
+  article {
+    padding: 0 0 2em 1em;
+    position: relative;
+    &:last-child {
+      background: none;
+      padding-bottom: 0;
+    }
+    footer {
+      padding: 0;
+      margin: 0;
+      text-align: left;
+      @include opacity(0.7);
+    }
+  }
+  h1 {
+    color: #fff;
+    margin-bottom: .3em;
+  }
+  h2 {
+    display: none;
+  }
+  h1 {
+    font-size: 2em;
+    text-align: left;
+    a {
+      text-decoration: none;
+      color: inherit;
+      font-weight: normal;
+      display: inline-block;
+      &:hover {
+        color: $link-color-hover;
+        text-decoration: underline;
+      }
+    }
+  }
+  a.category, time {
+    @extend .sans;
+    color: #fff;
+  }
+  color: #fff;
+  .entry-content { display: none; }
+  time {
+    font-size: .9em;
+    line-height: 1.2em;
+    .month, .day {
+        clear: both;
+        width: 100%;
+        display: block;
+        font-size: 20px;
+        text-align: center;
+    }
+    .month {
+        line-height: 20px;
+        text-transform: uppercase;
+    }
+    .day {
+        line-height: 26px;
+    }
+  }
+  p { margin-bottom: 1em; }
+  &, .entry-content {
+    a {
+      &:hover {
+        color: $link-color-hover;
+      }
+    }
+  }
+  a:hover { color: $link-color-hover; }
+  @media only screen and (min-width: 550px) {
+    article { margin-left: 5em; }
+    h2 {
+      margin-bottom: .3em;
+      font-weight: normal;
+      display: inline-block;
+      position: relative; top: -1px;
+      float: left;
+      font-size: 24px;
+      line-height: 30px;
+      &:first-child { padding-top: 0; }
+    }
+    time {
+      position: absolute;
+      text-align: right;
+      left: 0;
+      top: 0;
+    }
+    .year { display: none; }
+    article {
+      padding:{left: 4.5em;bottom: .7em;}
+    }
+  a.category {
+    line-height: 1.1em;
+    }
+  }
+}
+#content > .category {
+  article {
+    margin-left: 0;
+    padding-left: 6.8em;
+  }
+  .year { display: inline; }
+}

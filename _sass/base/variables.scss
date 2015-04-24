@@ -1,0 +1,51 @@
+$primary-color: #a6d549;
+$bg-color: #faf9f3;
+$container-gap: 20px;
+$navi-height: ($container-gap * 2);
+$link-color: #6f9622;
+$link-color-hover: lighten($link-color, 10%);
+$link-color-border: $primary-color;
+$text-color: #111;
+$gray-light: #444;
+$gray-lighter: #888;
+$text-color-light: $gray-light;
+$text-color-lighter: $gray-lighter;
+$text-highlight: $primary-color;
+$hr-color: #111;
+
+
+$font-sans: 'Source Sans Pro', Helvetica, sans-serif;
+$font-serif: 'Noto Serif', Georgia, times, serif;
+$font-monospace: Menlo, Monaco, Consolas, "Courier New", monospace;
+
+$font-size-base: 16px;
+$line-height-base: 18px;
+$border-radius-base: 5px;
+
+
+$pre-color: #111;
+$pre-bg: #ccc;
+
+$scroll-bg: rgba(#fff, .15);
+$scroll-thumb: rgba(#fff, .2);
+
+$highlight-bg: $primary-color;
+
+$modal-bg-color: #404040;
+$modal-btn-size: 106px;
+
+
+// Syntax highlight
+$yellow:    #b58900 !default;
+$orange:    #cb4b16 !default;
+$red:       #dc322f !default;
+$magenta:   #d33682 !default;
+$violet:    #6c71c4 !default;
+$blue:      #268bd2 !default;
+$cyan:      #2aa198 !default;
+$green:     #859900 !default;
+
+
+// For FancyBox
+// https://github.com/Studio-40/fancyBox/blob/master/source/jquery.fancybox.scss
+$fancybox-img-path: '/assets/img/';

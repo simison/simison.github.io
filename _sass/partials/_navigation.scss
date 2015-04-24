@@ -1,0 +1,86 @@
+
+#navigation {
+    display: block;
+    position: fixed;
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+    font-family: $font-sans;
+    font-weight: 400;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: $navi-height;
+    z-index: 3000;
+    @include selection(none);
+    #navigation-bg {
+        @include shadow-box(0 0.327em 0 0 rgba(0, 0, 0, 0.05));
+        position: relative;
+        background: $bg-color;
+        height: $navi-height;
+        width: 100%;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        border-bottom: 1px solid #ddd;
+        border-radius: none;
+    }
+    ul {
+        position: absolute;
+        display: inline-block;
+        margin: 10px 0;
+        padding: 0;
+        list-style: none;
+        top: 0;
+        margin-left: -17%;
+        li {
+            display: block;
+            padding: 0 10px;
+            margin: 0;
+            float: left;
+            line-height: 20px;
+            font-weight: 800;
+            font-size: 13px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            a {
+                display: block;
+                color: #000;
+                text-transform: uppercase;
+                text-decoration: none;
+                @include transition(all 0.2s linear);
+                border-bottom: 2px solid transparent;
+                &.active,
+                &:hover,
+                &:active {
+                    border-color: $link-color-border;
+                }
+            }
+        }
+        @media screen and (max-width: 768px) {
+            margin-left: -47%;
+            li {
+                padding: 0 5px;
+            }
+        }
+    }
+}
+
+/* Menu items are white on these pages */
+#blog-subscribe {
+    .menuitem {
+      color: #fff;
+    }
+}
+
+/* Mark active top menu item */
+body#volunteering .menuitem-volunteering,
+body#portfolio .menuitem-portfolio,
+body#media .menuitem-media,
+body#me .menuitem-me,
+body#cv .menuitem-cv,
+body#blog-index .menuitem-blog,
+body#blog-article .menuitem-blog,
+body#blog-subscribe .menuitem-blog {
+    border-color: $link-color-border;
+}

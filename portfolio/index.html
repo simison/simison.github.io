@@ -1,0 +1,64 @@
+---
+layout: default
+title: "Portfolio of Mikael Korpela"
+description: "There’s always the satisfaction that you have done something for somebody that goes beyond the commercial aspects of the show."
+body_id: "portfolio"
+---
+
+<div id="cover" resizable ng-style="{ height: windowHeight }">
+  <div resizable ng-style="{ height: windowHeight }"></div>
+  <div id="cover-blur" resizable ng-style="{ height: windowHeight }"></div>
+</div>
+
+<header id="page-header">
+  <div class="title">
+  	<div class="clown"></div>
+    <h1>Portfolio</h1>
+    <h3>There’s always the satisfaction that you have done something for somebody that goes beyond the commercial aspects of the show.</h3>
+    <hr>
+  </div>
+  <button class="down" ng-click="goToContent()"></button>
+</header>
+
+<div class="container" ng-controller="portfolioCtrl">
+
+  <h3 class="here">
+    <img src="{{ root_url }}/assets/img/i-design-develop.png" alt="I design and develop"><br>
+    and here is what I have done
+  </h3>
+
+  <article deckgrid source="works" cardTemplate="{{ root_url }}/ng-partials/portfolio-card.html" class="deckgrid modal-stack" ng-class="{'modal-active': card}"></article>
+
+  <p class="thanks">Kiitos. Thank you.</p>
+
+  <aside class="modal" ng-class="{'modal-active': card}">
+    <div class="modal-meta">
+  	  <button ng-click="card=false" class="flex-close"></button>
+
+      <h3 ng-show="card.title">{{ "{{ card.title " }}}}</h3>
+
+      <div ng-show="card.story" class="modal-story" ng-bind-html="card.story"></div>
+
+      <!-- Single URL -->
+      <a ng-href="{{ "{{ card.url " }}}}" ng-show="card.url" class="modal-url && card.url_label" target="_blank">{{ "{{ card.url_label " }}}}</a>
+
+      <!-- Multiple URLs -->
+      <a ng-show="card.urls" ng-repeat="link in card.urls" ng-href="{{ "{{ link.url " }}}}" class="modal-url" target="_blank">{{ "{{ link.url_label " }}}}</a>
+
+      <div ng-show="card.tags" class="modal-tags tags">
+         &lt;<span class="tag" ng-repeat="tag in card.tags">{{ "{{ tag " }}}}</span>&gt;
+      </div>
+
+      <div ng-show="card.employer" class="modal-employer">Employer: {{ "{{ card.employer " }}}}</div>
+
+      <div ng-show="card.year" class="modal-year">{{ "{{ card.year " }}}}</div>
+    </div>
+    <flex-slider slide="image in card.images" animation="fade" animation-loop="false" prev-text="" next-text="">
+      <li><img ng-src="{{ root_url }}/assets/portfolio/{{ "{{ image " }}}}"></li>
+    </flex-slider>
+  </aside>
+
+  <!-- Yo! Squeeze the duckie! ;-) -->
+  <a class="duckie" ng-click="duckie(true)" ng-mouseover="duckie(false)"></a>
+
+</div>

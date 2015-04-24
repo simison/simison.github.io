@@ -1,0 +1,68 @@
+---
+layout: default
+single: true
+body_id: "blog-article"
+---
+
+<div id="cover" resizable ng-style="{ height: (windowHeight / 1.5) }">
+  <div{% if page.cover_image %} style="background-image: url('{{ root_url }}/covers/{{ page.cover_image }}')"{% endif %} resizable ng-style="{ height: (windowHeight / 1.5) }"></div>
+  {% unless page.no_dark_cover %}<div id="cover-dark" resizable ng-style="{ height: (windowHeight / 1.5) }"></div>{% endunless %}
+</div>
+
+{% unless page.no_header %}
+<header id="page-header">
+  <div class="title">
+    <h1>{% if site.titlecase %}{{ page.title | titlecase }}{% else %}{{ page.title }}{% endif %}</h1>
+    <hr>
+  </div>
+</header>
+{% endunless %}
+
+<div class="container">
+  <article role="article" class="main hentry">
+    <div class="content" ng-controller="portfolioCtrl">
+
+      <div class="entry-content">{{ content }}</div>
+
+      <footer>
+        <div class="entry-meta">
+          By <span class="entry-author byline author vcard fn">{% if page.author %}{{ page.author }}{% else %}{{ site.author }}{% endif %}</span>
+          {% if page.date %}on {% include post/date.html %}{% endif %}
+          {% if page.photo_credit %}<span class="entry-photo-credit">{{ page.photo_credit | markdownify }}</span>{% endif %}
+          <!--{% if page.categories %}<span class="entry-categories">Posted in {{ page.categories | category_links }}</span>{% endif %}-->
+        </div>
+
+        {% unless page.sharing == false %}
+          {% include post/sharing.html %}
+        {% endunless %}
+
+        <nav class="nextprev">
+        {% if page.previous.url %}
+          <a class="previous basic-alignment left" href="{{page.previous.url}}" tt title="Previous Post"><i class="icon-left"></i> {{page.previous.title}}</a>
+        {% endif %}
+        {% if page.next.url %}
+          <a class="next basic-alignment right" href="{{page.next.url}}" tt title="Next Post">{{page.next.title}} <i class="icon-right"></i></a>
+        {% endif %}
+        </nav>
+      </footer>
+
+  </article>
+</div>
+
+{% if site.disqus_short_name and page.comments == true %}
+  <section class="comments">
+    <div class="container">
+      <div class="main">
+        <div class="content">
+          <h2 id="discussion">Discussion</h2>
+          <div id="disqus_thread" aria-live="polite">{% include post/disqus_thread.html %}</div>
+        </div>
+      </div>
+    </div>
+  </section>
+  {% include scripts/disqus.html %}
+{% endif %}
+
+<section id="blog-subscribe">
+  {% include blog_subscribe.html %}
+</section>

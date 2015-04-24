@@ -1,0 +1,15 @@
+<a ng-href="{{mother.cardURL(card)}}" class="card" ng-click="mother.openCard(card)">
+  <div class="card-wrapper">
+    <img ng-src="/assets/portfolio/{{card.cover}}" class="animation-fade animation-faded" data-imageloaded="" data-loadedclass="animation-faded" ng-show="card.cover">
+  </div>
+  <h3 ng-show="card.title" class="card-title" ng-bind-html="card.title"></h3>
+  <div ng-show="card.caption" class="card-caption">{{card.caption}}</div>
+  <div ng-show="card.tags" class="card-tags tags">
+    &lt;<span class="tag" ng-repeat="tag in card.tags">{{tag}}</span>&gt;
+  </div>
+  <div ng-show="card.employer || card.year" class="card-whowhen">
+    <span ng-show="card.employer">Employer: {{card.employer}}</span>
+    <span ng-show="card.employer && card.year"> / </span>
+    <span ng-show="card.year">{{card.year}}</span>
+  </div>
+</a>

@@ -1,0 +1,103 @@
+body#volunteering {
+    #cover {
+        & > div {
+            background-position: 50% bottom;
+        }
+    }
+    #page-header {
+        h1 {
+            font-size: 50px;
+            line-height: 50px;
+        }
+    }
+    .donate {
+        padding: 5px 10px 20px 10px;
+        text-align: center;
+        .donate-heading {
+            background: $primary-color;
+            padding-top: 1px;
+            overflow: hidden;
+            clear: both;
+            margin: -5px -10px 20px -10px;
+            h2, h4, p {
+                margin-left: 20px;
+                margin-right: 20px;
+            }
+        }
+        h2, h4 {
+            @extend .title-font;
+        }
+        h4 {
+            margin-bottom: 5px;
+            margin-top: 20px;
+            line-height: 20px;
+            font-size: 20px;
+        }
+        h2 {
+            margin-top: 0;
+            margin-bottom: 20px;
+            font-size: 16px;
+        }
+        .mono {
+            width: 100%;
+            border: 0 solid transparent;
+            background: transparent;
+            padding: 0;
+            margin: 0;
+            color: #000;
+            font-size: 12px;
+            line-height: 13px;
+            text-align: center;
+            &:focus {
+                outline: none;
+            }
+        }
+        /*
+        .gratipay a {
+            color: #663300;
+        }
+        */
+        .paypal {
+            line-height: 11px;
+        }
+        .bitcoin {
+            .mono {
+                font-size: 10px;
+            }
+            a {
+                color: $text-color;
+            }
+        }
+    }
+    .volunteer-projects {
+        clear: both;
+        overflow: hidden;
+        .volunteer-project {
+            float: left;
+            width: 25%;
+            text-align: center;
+            img {
+                max-width: 100%;
+            }
+        }
+        .volunteer-project-bewelcome,
+        .volunteer-project-liveherring,
+        .volunteer-project-carrotmob {
+            text-align: left;
+            width: 33%;
+            img {
+                float: left;
+                margin: 0 10px 0 0;
+            }
+        }
+        .volunteer-project-liveherring,
+        .volunteer-project-carrotmob {
+            padding-right: 30px;
+        }
+        .volunteer-project-liveherring {
+            img {
+                margin: 16px 10px 11px 0;
+            }
+        }
+    }
+}

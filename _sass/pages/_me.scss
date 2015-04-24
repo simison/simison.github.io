@@ -1,0 +1,125 @@
+body#me {
+	#page-header {
+	    .title {
+	        @media all and (max-width: 599px) {
+	            height: 550px;
+	        }
+	        @media all and (min-width: 600px) {
+	            height: 240px;
+	        }
+	        @media all and (min-width: 700px) {
+	            height: 240px;
+	        }
+	    }
+        h1 {
+            @extend .hero-font;
+            color: $bg-color;
+            font-size: 100px;
+            @media screen and (max-width: 768px) {
+                font-size: 70px;
+                line-height: 70px;
+            }
+        }
+        h3 {
+            font-family: 'Source Sans Pro', Helvetica, sans-serif;
+        }
+	}
+
+    #some {
+        margin-top: 100px;
+        font-size: 17px;
+        font-weight: normal;
+        text-shadow: none;
+        a {
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            line-height: 30px;
+            text-align: center;
+            background: $bg-color;
+            color: #333;
+            margin: 0 5px;
+            border-radius: 50%;
+            box-shadow: 0 1px 5px rgba(0,0,0,0.6);
+        }
+        @media screen and (max-width: 599px) {
+            margin-top: 30px;
+            a {
+                margin: 0 2px;
+            }
+        }
+    }
+    #contact {
+        display: inline-block;
+        position: relative;
+        text-shadow: none;
+        background: $bg-color;
+        box-shadow: 0 1px 5px rgba(0, 0, 0, 0.6);
+        padding: 0 15px;
+        height: 25px;
+        line-height: 25px;
+        @extend .sans;
+        color: #999;
+        @media screen and (max-width: 599px) {
+            display: block;
+            height: auto;
+            color: $bg-color; // Make dots in between invisible
+        }
+        a {
+            color: $text-color;
+        }
+        &:before,
+        &:after {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 0;
+            width: 4px;
+            height: 25px;
+            background: url(/assets/img/cut.png) 0 0 no-repeat;
+            @media screen and (max-width: 599px) {
+                display: none;
+            }
+        }
+        &:before {
+            left: -4px;
+        }
+        &:after {
+            right: -4px;
+            background-position: right 0;
+        }
+    }
+
+    .container .main .content {
+        width: 100%;
+        .narrower-content {
+            width: 45%;
+            margin: 0 auto;
+            @media screen and (max-width: 768px) {
+                width: 100%;
+            }
+        }
+        float: none;
+        line-height: 25px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        @extend .sans;
+        h2 {
+            @extend .serif;
+            text-transform: none;
+            font-size: 30px;
+            line-height: 35px;
+            padding-bottom: 20px;
+        }
+        hr {
+            background-color: $primary-color;
+            color: $primary-color;
+            width: 20%;
+            margin: 50px auto;
+        }
+        img {
+            max-width: 100%;
+        }
+    }
+}
