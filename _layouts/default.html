@@ -25,7 +25,7 @@
   <meta name="twitter:url" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   {% if page.og_image %}
     <meta name="twitter:image" content="{{ site.url }}/covers/{{ page.og_image }}">
-  {% else if page.cover_image %}
+  {% elseif page.cover_image %}
     <meta name="twitter:image" content="{{ site.url }}/covers/{{ page.cover_image }}">
   {% else %}
     <meta name="twitter:image" content="{{ site.url }}/assets/img/badge.jpg">
