@@ -13,7 +13,7 @@
   <meta property="og:title" content="{% if page.title %}{% if site.titlecase %}{{ page.title | titlecase }}{% else %}{{ page.title }}{% endif %}{% endif %}">
   <meta property="og:site_name" content="{{ site.title }}">
   <meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
-  <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+  <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   <meta property="og:type" content="website">
   {% if page.og_image %}<meta property="og:image" content="{{ site.url }}/covers/{{ page.og_image }}">{% endif %}
   {% if page.cover_image %}<meta property="og:image" content="{{ site.url }}/covers/{{ page.cover_image }}">{% endif %}
@@ -22,7 +22,7 @@
   {% if site.facebook_admins %}<meta property="fb:admins" content="{{ site.facebook_admins }}">{% endif %}
   <meta name="twitter:title" content="{% if page.title %}{% if site.titlecase %}{{ page.title | titlecase }}{% else %}{{ page.title }}{% endif %}{% endif %}">
   <meta name="twitter:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
-  <meta name="twitter:url" content="{{site.url}}">
+  <meta name="twitter:url" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   {% if page.og_image %}
     <meta name="twitter:image" content="{{ site.url }}/covers/{{ page.og_image }}">
   {% else if page.cover_image %}
