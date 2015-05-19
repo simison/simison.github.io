@@ -1,0 +1,34 @@
+{"works": [
+{
+  "title": "Tarjousagentti",
+  "tags": ["Design"],
+  "employer": "Into Digital",
+  "year": "2009",
+  "story": "Very UX/UI heavy project for a site selling used cars.",
+  "cover": "tarjousagentti_thumb.jpg",
+  "cover_2x": "tarjousagentti_thumb@2x.jpg",
+  "images": ["tarjousagentti_etusivu.png","tarjousagentti_sisasivu.png"]
+},
+{
+  "title": "Älypää / Sanoma Games",
+  "tags": ["Design"],
+  "employer": "SanomaWSOY",
+  "year": "2006-2008",
+  "story": "Graphic design for flash/mobile -games for alypaa.com and for their customers. Älypää is the biggest quiz online community in Finland with over 130 000 different visitors per week. Customers included many of the biggest companies and brands in Finland, such as Alko, Viking Line, Nindendo, SAK, S-ryhmä, Itella and many more.",
+  "cover": "alypaa_thumb.jpg",
+  "cover_2x": "alypaa_thumb@2x.jpg",
+  "url": "http://alypaa.com",
+  "url_label": "alypaa.com",
+  "images": ["alypaa_www2.png","alypaa_alko.png","alypaa_sak.png"]
+},
+{
+  "title": "Icons and symbols",
+  "tags": ["Design"],
+  "employer": "Into-Digital, Gemilo",
+  "year": "2008—2010",
+  "story": "For various projects.",
+  "cover": "icons_thumb.jpg",
+  "cover_2x": "icons_thumb@2x.jpg",
+  "images": ["icons_1.jpg", "icons_2.jpg"]
+},
+]}

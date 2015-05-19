@@ -4,24 +4,24 @@ title: Blog Archive
 body_id: "blog-index"
 ---
 
-<div id="cover" resizable ng-style="{ height: windowHeight }">
-  <div style="background-image: url('{{ root_url }}/covers/portugal-sea.jpg')" resizable ng-style="{ height: windowHeight }"></div>
-  <div id="cover-dark" resizable ng-style="{ height: windowHeight }"></div>
-  <div id="cover-blur" style="background-image: url('{{ root_url }}/covers/portugal-sea-blur.jpg')" resizable ng-style="{ height: windowHeight }"></div>
+<div id="cover" resizable ng-style="{ height: app.windowHeight }">
+  <div style="background-image: url('/covers/portugal-sea.jpg')" resizable ng-style="{ height: app.windowHeight }"></div>
+  <div id="cover-dark" resizable ng-style="{ height: app.windowHeight }"></div>
+  <div id="cover-blur" style="background-image: url('/covers/portugal-sea-blur.jpg')" resizable ng-style="{ height: app.windowHeight }"></div>
 </div>
 
 <header id="page-header">
   <div class="title">
     <h1>Blog Archives</h1>
     <hr>
-    <a href="{{ root_url }}/blog/" tt title="Bring me back!"><i class="icon-left"></i> Back to blog</a>
+    <a href="/blog/" tt title="Bring me back!"><i class="icon-left"></i> Back to blog</a>
   </div>
-  <button class="down" ng-click="goToContent()"></button>
+  <button class="down" ng-click="app.goToContent()"></button>
 </header>
 
 <div class="container">
   <article class="main">
-    <div class="content">
+    <div class="content" id="content">
 
       <div id="blog-archives">
       {% for post in site.posts reverse %}
@@ -38,7 +38,7 @@ body_id: "blog-index"
 
       <div class="text-centered">
         <hr>
-        <a href="{{ root_url }}/blog/"><i class="icon-left"></i> Back to Blog</a>
+        <a href="/blog/"><i class="icon-left"></i> Back to Blog</a>
       </div>
 
     </div>

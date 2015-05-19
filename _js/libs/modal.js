@@ -62,6 +62,6 @@
     activate: activate,
     deactivate: deactivate,
     disableBlur: disableBlur
-  }
+  };
 
 })();

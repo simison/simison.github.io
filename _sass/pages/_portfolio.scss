@@ -43,29 +43,6 @@ body#portfolio {
         line-height: 30px;
         text-align: center;
     }
-    .container {
-        h3.here {
-            margin: 90px auto 40px auto;
-            display: block;
-            text-align: center;
-            width: 100%;
-            @extend .hero-font;
-            color: #ceb55e;
-            font-size: 40px;
-            line-height: 20px;
-            img {
-                max-width: 100%;
-            }
-            @media screen and (max-width: 768px) {
-                font-size: 30px;
-                line-height: 30px;
-            }
-            @media screen and (max-width: 480px) {
-                font-size: 25px;
-                line-height: 25px;
-            }
-        }
-    }
     .duckie {
         display: block;
         margin: 0 0 0 100px;
@@ -129,7 +106,7 @@ body#portfolio {
         padding-top: 20px;
     }
     .card-wrapper {
-        min-height: 60px;
+        min-height: 100px;
         background: url(/assets/img/spinner.gif) center 50px no-repeat;
         img {
             min-width: 100%;
@@ -306,21 +283,4 @@ body#portfolio {
         background-position: 50% 50%;
         right: 10px;
     }
-    /*
-    .flex-direction-nav {
-        a  {
-            @include transition( 0.2s, ease-in-out );
-        }
-        .flexslider {
-            &:hover {
-                .flex-prev {
-                    left: 20px;
-                }
-                .flex-next {
-                    right: 20px;
-                }
-            }
-        }
-    }
-    */
 } //.modal

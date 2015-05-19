@@ -5,9 +5,9 @@ description: "I’m very active with different projects related to nomadism and 
 body_id: "volunteering"
 ---
 
-<div id="cover" resizable ng-style="{ height: (windowHeight / 1.03) }">
-  <div style="background-image: url('{{ root_url }}/covers/sierranevada.jpg')" resizable ng-style="{ height: (windowHeight / 1.03) }"></div>
-  <div id="cover-blur" style="background-image: url('{{ root_url }}/covers/sierranevada-blur.jpg')" resizable ng-style="{ height: (windowHeight / 1.03) }"></div>
+<div id="cover" resizable ng-style="{ height: (app.windowHeight / 1.03) }">
+  <div style="background-image: url('/covers/sierranevada.jpg')" resizable ng-style="{ height: (app.windowHeight / 1.03) }"></div>
+  <div id="cover-blur" style="background-image: url('/covers/sierranevada-blur.jpg')" resizable ng-style="{ height: (app.windowHeight / 1.03) }"></div>
 </div>
 
 <header id="page-header">
@@ -15,12 +15,12 @@ body_id: "volunteering"
     <h1>Volunteering</h1>
     <h3>I'm working for <i>you</i></h3>
   </div>
-  <button class="down" ng-click="goToContent()"></button>
+  <button class="down" ng-click="app.goToContent()"></button>
 </header>
 
 <div class="container">
   <article class="main">
-    <div class="content">
+    <div class="content" id="content">
 
       <p class="lead">
         I'm very active with different projects related to nomadism and free-economics. My goal is to make websites that allow people spend less time online and more time meeting each other. I'm visioning a world with trust, shared resources and sustainable living.
@@ -30,16 +30,16 @@ body_id: "volunteering"
 
       <div class="volunteer-projects">
         <div class="volunteer-project">
-          <a href="http://hitchwiki.org/"><img src="{{ root_url }}/assets/img/hitchwiki.png" alt="Hitchwiki" width="150" height="150" /></a>
+          <a href="https://www.trustroots.org/"><img src="/assets/img/trustroots.png" alt="Trustroots" width="150" height="150" /></a>
         </div>
         <div class="volunteer-project">
-          <a href="http://nomadwiki.org/"><img src="{{ root_url }}/assets/img/nomadwiki.png" alt="Nomadwiki" width="130" height="150" /></a>
+          <a href="http://hitchwiki.org/"><img src="/assets/img/hitchwiki.png" alt="Hitchwiki" width="150" height="150" /></a>
         </div>
         <div class="volunteer-project">
-          <a href="http://trashwiki.org/"><img src="{{ root_url }}/assets/img/trashwiki.png" alt="Trashwiki" width="150" height="150" /></a>
+          <a href="http://nomadwiki.org/"><img src="/assets/img/nomadwiki.png" alt="Nomadwiki" width="130" height="150" /></a>
         </div>
         <div class="volunteer-project">
-          <a href="https://www.trustroots.org/"><img src="{{ root_url }}/assets/img/trustroots.png" alt="TrustRoots" width="150" height="150" /></a>
+          <a href="http://trashwiki.org/"><img src="/assets/img/trashwiki.png" alt="Trashwiki" width="110" height="150" /></a>
         </div>
       </div>
 
@@ -49,15 +49,15 @@ body_id: "volunteering"
 
       <div class="volunteer-projects">
         <div class="volunteer-project volunteer-project-bewelcome">
-          <a href="http://www.bewelcome.org"><img src="{{ root_url }}/assets/img/bewelcome.png" alt="BeWelcome" /></a>
+          <a href="http://www.bewelcome.org"><img src="/assets/img/bewelcome.png" alt="BeWelcome" /></a>
         </div>
         <div class="volunteer-project volunteer-project-carrotmob">
-          <img src="{{ root_url }}/assets/img/carrotmob.png" alt="Carrotmob" />
-          <a href="http://www.porkkanamafia.fi">Carrotmob</a> consumer activism -mobs.
+          <img src="/assets/img/carrotmob.png" alt="Carrotmob" />
+          <a href="http://en.wikipedia.org/wiki/Carrotmob">Carrotmob</a> consumer activism -mobs.
         </div>
         <div class="volunteer-project volunteer-project-liveherring">
-          <img src="{{ root_url }}/assets/img/liveherring.png" alt="LiveHerring" />
-          <a href="http://liveherring.org">LiveHerring</a> media art activism.
+          <img src="/assets/img/liveherring.png" alt="LiveHerring" />
+          <a href="http://www.liveherring.org/">LiveHerring</a> media art activism.
         </div>
       </div>
 
@@ -100,7 +100,7 @@ body_id: "volunteering"
         <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" class="paypal">
           <input type="hidden" name="cmd" value="_s-xclick">
           <input type="hidden" name="hosted_button_id" value="2FRPS942N7D3L">
-          <input type="image" src="/assets/img/paypal.png" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+          <input type="image" src="/assets/img/paypal.png" border="0" name="submit" alt="Donate by PayPal">
           <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
         </form>
 

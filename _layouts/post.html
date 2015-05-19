@@ -4,9 +4,9 @@ single: true
 body_id: "blog-article"
 ---
 
-<div id="cover" resizable ng-style="{ height: (windowHeight / 1.5) }">
-  <div{% if page.cover_image %} style="background-image: url('{{ root_url }}/covers/{{ page.cover_image }}')"{% endif %} resizable ng-style="{ height: (windowHeight / 1.5) }"></div>
-  {% unless page.no_dark_cover %}<div id="cover-dark" resizable ng-style="{ height: (windowHeight / 1.5) }"></div>{% endunless %}
+<div id="cover" resizable ng-style="{ height: (app.windowHeight / 1.5) }">
+  <div{% if page.cover_image %} style="background-image: url('/covers/{{ page.cover_image }}')"{% endif %} resizable ng-style="{ height: (app.windowHeight / 1.5) }"></div>
+  {% unless page.no_dark_cover %}<div id="cover-dark" resizable ng-style="{ height: (app.windowHeight / 1.5) }"></div>{% endunless %}
 </div>
 
 {% unless page.no_header %}
@@ -20,7 +20,7 @@ body_id: "blog-article"
 
 <div class="container">
   <article role="article" class="main hentry">
-    <div class="content" ng-controller="portfolioCtrl">
+    <div class="content">
 
       <div class="entry-content">{{ content }}</div>
 

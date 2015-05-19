@@ -5,9 +5,9 @@ description: "Scrapbook about me in here and there."
 body_id: "media"
 ---
 
-<div id="cover" resizable ng-style="{ height: (windowHeight / 1.03) }">
-  <div style="background-image: url('{{ root_url }}/covers/walls.jpg')" resizable ng-style="{ height: (windowHeight / 1.03) }"></div>
-  <div id="cover-blur" style="background-image: url('{{ root_url }}/covers/walls-blur.jpg')" resizable ng-style="{ height: (windowHeight / 1.03) }"></div>
+<div id="cover" resizable ng-style="{ height: (app.windowHeight / 1.03) }">
+  <div style="background-image: url('/covers/walls.jpg')" resizable ng-style="{ height: (app.windowHeight / 1.03) }"></div>
+  <div id="cover-blur" style="background-image: url('/covers/walls-blur.jpg')" resizable ng-style="{ height: (app.windowHeight / 1.03) }"></div>
 </div>
 
 <header id="page-header">
@@ -15,12 +15,12 @@ body_id: "media"
     <h1>Scrapbook about me in here and there</h1>
     <hr>
   </div>
-  <button class="down" ng-click="goToContent()"></button>
+  <button class="down" ng-click="app.goToContent()"></button>
 </header>
 
 <div class="container">
   <article class="main">
-    <div class="content">
+    <div class="content" id="content">
       <h4>About hitchhiking &amp; traveling</h4>
       <ul>
         <li>German newspaper Frankfurter Allgemeine Zeitung - <a href="http://ideas.trustroots.org/wordpress/wp-content/uploads/2015/04/FAS-170415-V3_Sofasurf.pdf">Sofa, so good</a>, 19. Apr 2015 (In German)</li>
@@ -47,7 +47,7 @@ body_id: "media"
       <ul>
         <li>Carrotmob / Porkkanamafia was pretty much in every possible Finnish media during 2008—2010</li>
         <li>Finnish newspaper Suurjyväskylän lehti: <a href="http://www.surkkari.fi/pdf/2008/200844_ke/sjl28.pdf">Mediataidetta Holvissa</a>, 5. November 2008</li>
-        <li>Finnish webzine <a href="http://vierityspalkki.fi/2008/03/31/xss-aukot-verkkopalveluiden-riesana/">XSS-aukot verkkopalveluiden riesana</a>, 31 March 2008</li>
+        <li>Finnish webzine Vierityspalkki <a href="http://vierityspalkki.fi/2008/03/31/xss-aukot-verkkopalveluiden-riesana/">XSS-aukot verkkopalveluiden riesana</a>, 31 March 2008</li>
         <li>Finnish newspaper Keski-Suomalainen: <a href="{{ root_url }}/files/ksml_2008-03-31_suurten_sivut_reikajuustoa.pdf">Suurten sivut reikäjuustoa</a>, 31 March 2008</li>
         <li>Finnish newspaper Helsingin Sanomat: <a href="http://www2.hs.fi/english/archive/news.asp?id=20021022IE1">Net detectives found the bomber by themselves</a>, 22. October 2002</li>
       </ul>

@@ -5,60 +5,58 @@ description: "I build websites and campaigns for the largest brands in Europe an
 body_id: "cv"
 ---
 
-<div id="cover" resizable ng-style="{ height: (windowHeight / 1.03) }">
-  <div style="background-image: url('{{ root_url }}/covers/porta-de-sol-lisbon.jpg')" resizable ng-style="{ height: (windowHeight / 1.03) }"></div>
-  <div id="cover-blur" style="background-image: url('{{ root_url }}/covers/porta-de-sol-lisbon-blur.jpg')" resizable ng-style="{ height: (windowHeight / 1.03) }"></div>
+<div id="cover" resizable ng-style="{ height: (app.windowHeight / 1.03) }">
+  <div style="background-image: url('/covers/porta-de-sol-lisbon.jpg')" resizable ng-style="{ height: (app.windowHeight / 1.03) }"></div>
+  <div id="cover-blur" style="background-image: url('/covers/porta-de-sol-lisbon-blur.jpg')" resizable ng-style="{ height: (app.windowHeight / 1.03) }"></div>
 </div>
 
 <header id="page-header">
   <div class="title" style="height:50px">
     <h1>.CV {</h1>
   </div>
-  <button class="down" ng-click="goToContent()"></button>
+  <button class="down" ng-click="app.goToContent()"></button>
 </header>
 
 <div class="container vcard" itemscope itemtype="http://data-vocabulary.org/Person">
   <article class="main">
-    <div class="content">
+    <div class="content" id="content">
 
-      <p class="lead cv-lead">I build websites and campaigns for the biggest brands in Europe and in Finland by working mostly with digital and advertising agencies. I'm very experienced both at graphic design and at frontend development.</p>
+      <p class="lead cv-lead">I build websites and campaigns for the biggest brands in Europe and in Finland by working mostly with digital and advertising agencies, as well with startups. I'm very experienced both at design and development.</p>
 
-      <p>With my curiosity I've ended up doing not only design but writing, programming, SEO, leading projects, teaching, organizing events. I've done loads: worked in really big and in quite small companies, done freelancing and won a couple of awards with my teams. I'm active open source contributor and visionary free/share-economics activist.</p>
+      <p>I've done loads — my industry experience is extensive. I’m very <a href="https://github.com/simison">active</a> open source contributor and visionary free/share-economics activist. I've won a couple of awards with my teams and I regularly give interviews about my projects.</p>
+
+      <p>Currently I'm concentrating mostly on consulting, startups and open source.</p>
+
+      <h3>Exhausting list of the techy stuff I'm familiar with</h3>
+      <ul class="links-colorless list-skills">
+        <li>Cross-browser, cross-platform -testing and debugging</li>
+        <li>JavaScript since <em>forever</em>. Single page apps. JS at client &amp; server side</li>
+        <li>Databases; MySQL since 4.x and <a href="http://www.mongodb.org/">MongoDB</a> since 2013</li>
+        <li><a href="http://nginx.org">Nginx</a> & <a href="https://httpd.apache.org/">Apache</a> servers</li>
+        <li>PHP since 3.x</li>
+        <li>Linux server maintenace</li>
+        <li><a href="http://coffeescript.org/">CoffeeScript</a></li>
+        <li><a href="http://www.wordpress.org">Wordpress</a> since 1.x (I'm <em>very</em> experienced with WP)</li>
+        <li><a href="http://nodejs.org">NodeJS</a></li>
+        <li><a href="http://expressjs.com/">ExpressJS</a></li>
+        <li><a href="http://www.meteor.com">MeteorJS</a></li>
+        <li><a href="http://www.symfony.com">Symfony2</a></li>
+        <li><a href="http://www.crasman.fi/en/">Crasman Stage CMS</a></li>
+        <li><a href="http://phonegap.com/">PhoneGAP</a>/<a href="https://cordova.apache.org/">Cordova</a></li>
+        <li><a href="http://www.mediawiki.org">Mediawiki</a></li>
+        <li><a href="https://angularjs.org/">AngularJS</a></li>
+        <li><a href="https://developers.google.com/maps/">Google Maps API</a>, <a href="http://openlayers.org/">OpenLayers</a> and <a href="http://www.leafletjs.com/">Leaflet</a> <em>(I'm generally pretty good with mapping stuff)</em></li>
+        <li><a href="http://git-scm.com/">Git</a> &amp; <a href="https://subversion.apache.org/">Subversion</a></li>
+        <li class="list-skills-more">
+          <small>— <a href="https://www.linkedin.com/profile/view?id=16003262#profile-skills">more on LinkedIn</a></small>
+        </li>
+      </ul>
 
       <ul class="list-skills">
         <li>Photoshop</li>
         <li>Indesign</li>
         <li>Illustrator</li>
         <li>Flash <em>(Frankly I've been trying to keep away from it nowadays)</em></li>
-      </ul>
-
-      <h3>Exhausting list of the techy stuff I'm familiar with</h3>
-      <ul class="links-colorless list-skills">
-        <li>Cross-browser, cross-platform -testing and debugging</li>
-        <li>JavaScript. Single page apps. JS at client &amp; server side</li>
-        <li>PHP since 3.x</li>
-        <li><a href="http://www.wordpress.org">Wordpress</a> since 1.x (I'm <em>very</em> experienced with WP)</li>
-        <li><a href="http://www.symfony.com">Symfony2</a></li>
-        <li><a href="http://www.crasman.fi/en/">Crasman Stage CMS</a></li>
-        <li><a href="https://developers.facebook.com/">Facebook API</a></li>
-        <li><a href="http://phonegap.com/">PhoneGAP</a>/<a href="https://cordova.apache.org/">Cordova</a> for native mobile apps</li>
-        <li><a href="https://developers.google.com/maps/">Google Maps API</a>, <a href="http://openlayers.org/">OpenLayers</a> and <a href="http://www.leafletjs.com/">Leaflet</a> <em>(I'm pretty good in mapping stuff in general)</em></li>
-        <li><a href="http://www.mediawiki.org">Mediawiki</a></li>
-        <li>CSS <a href="http://www.lesscss.org">LESS</a> &amp; <a href="http://sass-lang.com/">SASS</a> preprocessors</li>
-        <li><a href="http://gruntjs.com/">Grunt</a> task runner</li>
-        <li><a href="http://www.mongodb.org/">MongoDB</a></li>
-        <li><a href="http://expressjs.com/">ExpressJS</a></li>
-        <li><a href="https://angularjs.org/">AngularJS</a></li>
-        <li><a href="http://www.meteor.com">MeteorJS</a></li>
-        <li><a href="http://nodejs.org">NodeJS</a></li>
-        <li><a href="http://www.jquery.com">jQuery</a> (+<a href="http://jqueryui.com/">UI</a>, +<a href="http://jquerymobile.com/">Mobile</a>)</li>
-        <li><a href="http://nginx.org">Nginx</a></li>
-        <li><a href="http://git-scm.com/">Git</a> &amp; <a href="https://subversion.apache.org/">Subversion</a></li>
-        <li><a href="http://getbootstrap.com">Bootstrap</a></li>
-        <li><a href="http://coffeescript.org/">CoffeeScript</a></li>
-        <li><span title="Linux + Apache + MySQL + PHP" tt>LAMP</span>
-          <br><small>— <a href="https://www.linkedin.com/profile/view?id=16003262#profile-skills">more on LinkedIn</a></small>
-        </li>
       </ul>
 
       <h2 id="work">Worked for...</h2>
@@ -70,7 +68,17 @@ body_id: "cv"
           Developer & Designer
         </div>
         <div class="description">
-          I've worked for multiple agencies and companies as a freelance developer and designer. SEK Point, Into-Digital, Crasman, Ad Kiivi etc.
+          I've worked with multiple agencies, companies and startups as a freelance developer and designer. SEK Point, Into-Digital, Crasman, Ad Kiivi and many more.
+        </div>
+      </li>
+
+      <li>
+        <div class="summary">
+          <h4>Activist</h4>
+          2008—
+        </div>
+        <div class="description">
+          I'm a co-founder of <a href="https://www.trustroots.org/#!/foundation">Trustroots Foundation</a> (2014—), a non-profit organisation running some big free-economy travel sites. Namely <a href="http://www.trustroots.org">Trustroots.org</a> but also <a href="http://hitchwiki.org">Hitchwiki</a>, <a href="http://nomadwiki.org">Nomadwiki</a> and more.
         </div>
       </li>
 
@@ -81,7 +89,7 @@ body_id: "cv"
           4/2012—04/2014
         </div>
         <div class="description">
-          Byroo is an awesome digital advertising agency based in Helsinki. Clients include many of the biggest advertising agencies in Finland and notable brands.
+          Byroo is an digital advertising agency based in Helsinki. Clients include many of the biggest advertising agencies in Finland and notable brands.
         </div>
       </li>
 
@@ -114,7 +122,7 @@ body_id: "cv"
           5/2008—3/2009
         </div>
         <div class="description">
-          My work was really versatile in the area of digital media. Customers included many of the largest companies and brands in Finland and Europe.
+          Customers included many of the largest companies and brands in Finland and Europe.
         </div>
       </li>
 
@@ -136,7 +144,7 @@ body_id: "cv"
           6/2007—4/2008
         </div>
         <div class="description">
-          Freelancer
+          Freelancing for culture productions
         </div>
       </li>
 
@@ -147,27 +155,31 @@ body_id: "cv"
           8/2007—11/2007
         </div>
         <div class="description">
-          Design, ad sales, distribution, writing, and everything else. Kulkuri was a biweekly culture magazine and event calendar based in Jyväskylä Finland, with a distribution of around 5000 copies. I wrote articles for about a year, and before that for a similar magazine, Puimuri, which later joined Kulkuri.
+          Kulkuri was a biweekly culture magazine and event calendar based in Jyväskylä Finland, with a distribution of around 5000 copies.
         </div>
       </li>
 
+      <!--
       <li>
         <h4>Short: trainee / civil service</h4>
         <a href="http://www.jao.fi/">Jyväskylän ammattiopisto</a>, media-assistant / civil service (non-military)</span>, <abbr class="dtstart" title="2004-06">6/2004</abbr>—<abbr class="dtend" title="2005-06">6/2005</abbr><br>
         <a href="http://www.mediataivas.com">Advertising agency Mediataivas Ltd</a>, trainee, 2 months in <abbr class="dtstart" title="2003-11-11">2003</abbr><abbr class="dtend" title="2004-02-20"></abbr><br>
         <a href="http://www.mediacabinet.fi">Media Cabinet Ltd</a>, trainee 1 month in <abbr class="dtstart" title="2003-03-24">2003</abbr><abbr class="dtend" title="2003-05-04"></abbr>
       </li>
+      -->
 
       </ol>
 
       <h3 id="also">Also</h3>
-      Plenty of projects as a freelancer for large and small clients. I've worked around the world — in Finland, Lithuania, Spain, Portugal, France, Turkey, Malaysia, Indonesia, and Singapore. I've also worked with exhibitions, several small magazines, and have been an instructor and lecturer.
+      Plenty of projects as a freelancer for large and small clients. I've worked around the world — in Finland, Lithuania, Spain, Portugal, France, Turkey, Malaysia, Indonesia, USA and Singapore. I've also worked with exhibitions, several small magazines, and have been an instructor and lecturer.
+      <br><br>
+      I've co-organised <a href="www.meetup.com/Vilnius-js/">VilniusJS</a> meetups and a dozen small and bigger <a href="http://en.wikipedia.org/wiki/Hackathon">hackathons</a> over the years.
       <br /><br />
-      From 2006—2008 I was involved with <a href="http://www.liveherring.org">Live Herring</a> workgroup, increasing the exposure of Nordic media-art in workshops, lectures and exhibitions. I also contributed to the consumer and climate activism collective, <a href="http://www.porkkanamafia.fi/in-english/">Carrotmob</a>, from 2008—2010.
+      2006—2008 I was involved with <a href="http://www.liveherring.org">Live Herring</a> workgroup, increasing the exposure of Nordic media-art in workshops, lectures and exhibitions. In 2008—2010 I contributed to the consumer and climate activism collective <a href="http://en.wikipedia.org/wiki/Carrotmob">Carrotmob</a>.
 
 
       <h2 id="honors">Honors</h2>
-      <ul>
+      <ul class="links-colorless list-skills">
         <li><b>2010</b> — <a href="http://www.mtv3.fi/kuukaudenparhaatpikselit/?1104697">MTV3 Golden pixels</a> winner, Berocca banner-campaing. Selected as "the best Golden pixel of 2010" in <a href="http://www.rekaksois.com/grandone/voittajat.php">Grand One 2011</a>. (Employer: Into-Digital, role: Flash developer)</li>
         <li><b>2010</b> — <a href="http://www.rekaksois.com/grandone/?sivu=voittajat">Grand One 2010</a> winner, best Infodesign: Sun Sauna (Employer: Into-Digital, role: art director)</li>
         <li><b>2009</b> — <a href="http://www.rekaksois.com/grandone09/?sivu=voittajat">Grand One 2009</a> 1st honorable mention, most effective online campaign: Finnmatkat (TUI) email campaing (Employer: Into-Digital, role: art director)</li>
@@ -186,7 +198,7 @@ body_id: "cv"
     </div>
     <aside class="sidebar">
 
-      <img src="{{ root_url }}/assets/img/mikael.jpg" alt="Mikael Korpela" itemprop="photo" class="photo">
+      <img src="/assets/img/mikael.jpg" alt="Mikael Korpela" itemprop="photo" class="photo">
 
       <br><br>
 
@@ -212,7 +224,7 @@ body_id: "cv"
       </div>
     </aside>
 
-    <span class="cv-finished">} <a href="{{ root_url }}/">// Say hello!</a></span>
+    <span class="cv-finished">} <a ng-href="{{ root_url }}/">// Say hello!</a></span>
 
   </div>
 </div>

@@ -5,10 +5,10 @@ description: "Exploring the world of share- & free economy while living a life o
 body_id: "blog-index"
 ---
 
-<div id="cover" resizable ng-style="{ height: windowHeight }">
-  <div style="background-image: url('{{ root_url }}/covers/rock-climb-sintra.jpg')" resizable ng-style="{ height: windowHeight }"></div>
-  <div id="cover-dark" resizable ng-style="{ height: windowHeight }"></div>
-  <div id="cover-blur" style="background-image: url('{{ root_url }}/covers/rock-climb-sintra-blur.jpg')" resizable ng-style="{ height: windowHeight }"></div>
+<div id="cover" resizable ng-style="{ height: app.windowHeight }">
+  <div style="background-image: url('/covers/rock-climb-sintra.jpg')" resizable ng-style="{ height: app.windowHeight }"></div>
+  <div id="cover-dark" resizable ng-style="{ height: app.windowHeight }"></div>
+  <div id="cover-blur" style="background-image: url('/covers/rock-climb-sintra-blur.jpg')" resizable ng-style="{ height: app.windowHeight }"></div>
 </div>
 
 <header id="page-header">
@@ -16,7 +16,7 @@ body_id: "blog-index"
     <h1>Mikael Korpela</h1>
     <h3>Exploring the world of share- & free economy while living a life of a traveling geek.</h3>
     <hr>
-    <a href="{{ root_url }}/blog/archives">Archives</a>
+    <a href="/blog/archives">Archives</a>
     /
     <a href="{{ "/feed.xml" | prepend: site.baseurl }}" rel="subscribe-rss" title="Subscribe via RSS">RSS</a>
     {% if site.subscribe_email %}
@@ -24,14 +24,14 @@ body_id: "blog-index"
       <a href="{{ site.subscribe_email }}" rel="subscribe-email" title="Subscribe via email">Subscribe via Email</a></li>
     {% endif %}
   </div>
-  <button class="down" ng-click="goToContent()"></button>
+  <button class="down" ng-click="app.goToContent()"></button>
 </header>
 
 <div class="container">
     <article class="main">
         <div class="content">
 
-            <div class="blog-index">
+            <div class="blog-index" id="content">
               {% for post in site.posts limit: site.recent_posts %}
               {% assign content = post.content %}
                 <article>

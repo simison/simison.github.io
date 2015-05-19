@@ -104,5 +104,10 @@ body#cv {
             left: -5px;
             color: #b3ae93;
         }
+        &.list-skills-more {
+          &:before {
+            content: '';
+          }
+        }
     }
 }

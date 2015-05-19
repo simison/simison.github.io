@@ -1,13 +1,13 @@
 ---
 layout: default
 title: "Mikael Korpela"
-description: "Modern nomad, an activist and a friend."
+description: "Modern nomad, an activist and a friend Mikael Korpela."
 body_id: "me"
 ---
 
-<div id="cover" resizable ng-style="{ height: windowHeight }">
-  <div style="background-image: url('{{ root_url }}/covers/albanian-mountains.jpg')" resizable ng-style="{ height: windowHeight }"></div>
-  <div id="cover-blur" style="background-image: url('{{ root_url }}/covers/albanian-mountains-blur.jpg')" resizable ng-style="{ height: windowHeight }"></div>
+<div id="cover" resizable ng-style="{ height: app.windowHeight }">
+  <div style="background-image: url('/covers/albanian-mountains.jpg')" resizable ng-style="{ height: app.windowHeight }"></div>
+  <div id="cover-blur" style="background-image: url('/covers/albanian-mountains-blur.jpg')" resizable ng-style="{ height: app.windowHeight }"></div>
 </div>
 
 <header id="page-header">
@@ -20,7 +20,7 @@ body_id: "me"
     {% include some.html %}
     <br><br>
     <span id="contact">
-      <a href="mailto:mikael@ihminen.org" tt title="...just drop me a message!">mikael@ihminen.org</a>
+      <a href="mailto:mikael@ihminen.org">mikael@ihminen.org</a>
       &nbsp;&bull;&nbsp;
       <a href="tel:+358505557171" tt title="Finland">+358505557171</a>
       &nbsp;&bull;&nbsp;
@@ -49,7 +49,7 @@ body_id: "me"
       </div>
 
       <p>
-        <img src="{{ root_url }}/assets/img/mikael-me.jpg" alt="Mikael on meadow in French alps"><br>
+        <img src="/assets/img/mikael-me.jpg" alt="Mikael on meadow in French alps"><br>
         <small><em>This is me on a meadow I found at 2km altitude in French alps.</em></small>
       </p>
 

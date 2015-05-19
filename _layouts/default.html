@@ -1,6 +1,5 @@
-{% capture root_url %}{{ site.root | strip_slash }}{% endcapture %}
 <!DOCTYPE html>
-<html lang="en" ng-app="mikael" ng-controller="mainCtrl">
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <title>{% if page.title %}{% if site.titlecase %}{{ page.title | titlecase }}{% else %}{{ page.title }}{% endif %}{% endif %}</title>
@@ -35,37 +34,37 @@
   <!--[if lt IE 9]>
     <script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
     <script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
   <![endif]-->
   <link rel="profile" href="http://microformats.org/profile/hcard">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
-  <link rel="shortcut icon" href="{{ root_url }}/assets/img/favicon.png" type="image/png" />
-  <link rel="bookmark icon" href="{{ root_url }}/assets/img/favicon.png" type="image/png" />
+  <link rel="shortcut icon" href="/assets/img/favicon.png" type="image/png" />
+  <link rel="bookmark icon" href="/assets/img/favicon.png" type="image/png" />
   <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600;Noto+Serif:400" type="text/css">
-  <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}?c={{ site.time | date_to_xmlschema | cgi_escape }}">
-  <link rel="stylesheet" href="{{ root_url }}/assets/fontello/css/glyphs.css" type="text/css">
+  <link rel="stylesheet" href="/css/main.css?c={{ site.time | date_to_xmlschema | cgi_escape }}">
+  <link rel="stylesheet" href="/assets/fontello/css/glyphs.css" type="text/css">
   {% if site.facebook_like %}<link rel="dns-prefetch" href="//connect.facebook.net" />{% endif %}
+  <link rel="dns-prefetch" href="//mikaelkorpela.disqus.com" />
   {% include scripts/google_analytics.html %}
 </head>
-<body class="scrolling-{{ "{{ scrolling " }}}}"{% if page.body_id %} id="{{ page.body_id }}"{% endif %}>
-
+<body class="scrolling-{{ "{{ app.scrolling " }}}}"{% if page.body_id %} id="{{ page.body_id }}"{% endif %} ng-controller="AppController as app">
+{{site.baseurl}}
   <nav id="navigation">
     <div id="navigation-bg"></div>
     <ul>
-      <li><a class="menuitem menuitem-me" href="{{ root_url }}/">Me</a></li>
-      <li><a class="menuitem menuitem-blog" href="{{ root_url }}/blog">Blog</a></li>
-      <li><a class="menuitem menuitem-media" href="{{ root_url }}/media">In media</a></li>
-      <li><a class="menuitem menuitem-volunteering" href="{{ root_url }}/volunteering">Volunteering</a></li>
-      <li><a class="menuitem menuitem-cv" href="{{ root_url }}/cv">CV</a></li>
-      <li><a class="menuitem menuitem-portfolio" href="{{ root_url }}/portfolio">Portfolio</a></li>
+      <li><a class="menuitem menuitem-me" href="/">Me</a></li>
+      <li><a class="menuitem menuitem-blog" href="/blog/">Blog</a></li>
+      <li><a class="menuitem menuitem-media" href="/media/">In media</a></li>
+      <li><a class="menuitem menuitem-volunteering" href="/volunteering/">Volunteering</a></li>
+      <li><a class="menuitem menuitem-cv" href="/cv/">CV</a></li>
+      <li><a class="menuitem menuitem-portfolio" href="/portfolio/">Portfolio</a></li>
     </ul>
   </nav>
 
-  <div ui-keydown="{esc: 'card=false'}" tabindex="0">
+  <div ui-keydown="{esc: 'portfolio.card=false'}" tabindex="0">
     {{ content | expand_urls: root_url }}
   </div>
 
-  <script src="{{ root_url }}/js/app.min.js?c={{ site.time | date_to_xmlschema | cgi_escape }}" type="text/javascript"></script>
+  <script src="/js/app.min.js?c={{ site.time | date_to_xmlschema | cgi_escape }}" type="text/javascript"></script>
 </body>
 </html>
