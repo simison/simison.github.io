@@ -19,6 +19,10 @@ body#blog-index {
                 border-color: #fff;
                 margin-top: 100px;
                 margin-bottom: 100px;
+                @media all and (max-width: 568px) {
+                    margin-top: 40px;
+                    margin-bottom: 40px;
+                }
             }
         }
     }
@@ -57,6 +61,19 @@ body#blog-index {
         h1 {
             font-size: 50px;
             line-height: 65px;
+        }
+        @media all and (max-width: 320px) {
+            h3 {
+                font-size: 20px;
+                line-height: 25px;
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+        }
+        @media all and (max-height: 320px) {
+            .title {
+                height: 200px;
+            }
         }
     }
 }
@@ -196,7 +213,7 @@ body#blog-article {
     }
     #mc_embed_signup {
         width: 310px;
-        margin: 0 0 30px 0;
+        margin: 0 0 50px 0;
         clear: both;
         overflow: hidden;
         margin-left: auto;
@@ -217,14 +234,21 @@ body#blog-article {
         @include border-left-radius(0);
       }
     }
-    @media only screen and (max-width: 480px) {
+    @media only screen and (max-width: 568px) {
+        .title {
+          height: 200px;
+          h1 {
+              padding-left: 10px;
+              padding-right: 10px;
+          }
+        }
         h1 {
             font-size: 25px;
             line-height: 30px;
         }
         #mc_embed_signup {
-            width: 100%;
-            margin: 0;
+            width: 90%;
+            margin: 0 auto 20px auto;
         }
         #mce-EMAIL {
           border-radius: $border-radius-base;
@@ -245,6 +269,9 @@ body#blog-index {
         box-shadow: 0 0 15px rgba(0,0,0,0.2);
         color: #fff;
         text-align: center;
+        h1 {
+            @extend .article-title-font;
+        }
         hr {
             width: 20%;
             background: #fff;
@@ -259,7 +286,7 @@ body#blog-index {
         background-position: center bottom;
         background-image: url(/covers/northpole.jpg);
         padding: 100px;
-        @media only screen and (max-width: 480px) {
+        @media only screen and (max-width: 568px) {
             padding: 50px;
         }
         @media

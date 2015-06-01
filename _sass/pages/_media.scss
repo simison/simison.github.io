@@ -13,6 +13,21 @@ body#media {
             font-size: 50px;
             line-height: 65px;
         }
+        @media all and (max-width: 320px) {
+            h1 {
+              font-size: 35px;
+              line-height: 55px;
+            }
+        }
+        @media all and (max-height: 370px) {
+            .title {
+              height: 180px;
+            }
+            h1 {
+              font-size: 35px;
+              line-height: 35px;
+            }
+        }
     }
     .container .main .content {
         float: none;
@@ -23,5 +38,10 @@ body#media {
         hr {
             width: 20%;
         }
+    }
+    @media all and (max-width: 568px) {
+      ul {
+        padding: 0;
+      }
     }
 }

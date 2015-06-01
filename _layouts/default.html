@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name=viewport content="width=device-width, initial-scale=1, maximum-scale=1">
   <title>{% if page.title %}{% if site.titlecase %}{{ page.title | titlecase }}{% else %}{{ page.title }}{% endif %}{% endif %}</title>
-  <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1">
-  <meta name="viewport" content="minimal-ui">
   <meta name="HandheldFriendly" content="True">
   <meta name="MobileOptimized" content="320">
   <meta name="format-detection" content="telephone=no">
@@ -54,10 +54,16 @@
     <ul>
       <li><a class="menuitem menuitem-me" href="/">Me</a></li>
       <li><a class="menuitem menuitem-blog" href="/blog/">Blog</a></li>
-      <li><a class="menuitem menuitem-media" href="/media/">In media</a></li>
+      <li><a class="menuitem menuitem-media" href="/media/">
+        <span class="visible-xs">Media</span>
+        <span class="hidden-xs">In media</span>
+      </a></li>
       <li><a class="menuitem menuitem-volunteering" href="/volunteering/">Volunteering</a></li>
       <li><a class="menuitem menuitem-cv" href="/cv/">CV</a></li>
-      <li><a class="menuitem menuitem-portfolio" href="/portfolio/">Portfolio</a></li>
+      <li><a class="menuitem menuitem-portfolio" href="/portfolio/">
+        <span class="visible-xs">Portf.</span>
+        <span class="hidden-xs">Portfolio</span>
+      </a></li>
     </ul>
   </nav>
 

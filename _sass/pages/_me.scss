@@ -2,7 +2,7 @@ body#me {
 	#page-header {
 	    .title {
 	        @media all and (max-width: 599px) {
-	            height: 550px;
+	            height: 450px;
 	        }
 	        @media all and (min-width: 600px) {
 	            height: 240px;
@@ -10,6 +10,9 @@ body#me {
 	        @media all and (min-width: 700px) {
 	            height: 240px;
 	        }
+					@media screen and (max-height: 320px) {
+						  height: 200px;
+					}
 	    }
         h1 {
             @extend .hero-font;
@@ -19,6 +22,10 @@ body#me {
                 font-size: 70px;
                 line-height: 70px;
             }
+            @media screen and (max-width: 568px) {
+                font-size: 40px;
+                line-height: 40px;
+						}
         }
         h3 {
             font-family: 'Source Sans Pro', Helvetica, sans-serif;

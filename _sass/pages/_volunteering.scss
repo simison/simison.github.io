@@ -8,6 +8,10 @@ body#volunteering {
         h1 {
             font-size: 50px;
             line-height: 50px;
+            @media all and (max-width: 320px) {
+                font-size: 35px;
+                line-height: 35px;
+            }
         }
     }
     .donate {
@@ -79,12 +83,22 @@ body#volunteering {
             img {
                 max-width: 100%;
             }
+            @media all and (max-width: 320px) {
+                width: 50%;
+                padding-bottom: 10px;
+                img {
+                    max-width: 90%;
+                }
+            }
         }
         .volunteer-project-bewelcome,
         .volunteer-project-liveherring,
         .volunteer-project-carrotmob {
             text-align: left;
             width: 33%;
+            @media all and (max-width: 320px) {
+                width: 100%;
+            }
             img {
                 float: left;
                 margin: 0 10px 0 0;

@@ -13,6 +13,12 @@ body#portfolio {
             @media screen and (max-width: 768px) {
                 height: 520px;
             }
+            @media only screen and (max-width: 568px) {
+                height: 400px;
+            }
+            @media only screen and (max-height: 320px) {
+                height: 320px;
+            }
         }
         h1 {
             font-size: 75px;
@@ -29,6 +35,23 @@ body#portfolio {
             height: 213px;
             margin: 0 auto;
             background: transparent url(/assets/img/portfolio.png) no-repeat;
+        }
+        @media only screen and (max-width: 568px) {
+            h1 {
+                font-size: 40px;
+                line-height: 40px;
+            }
+            h3 {
+                margin-top: 18px;
+                line-height: 25px;
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+            .clown {
+                width: 90px;
+                height: 157px;
+                background-size: 90px 157px;
+            }
         }
     }
     .thanks {

@@ -23,8 +23,25 @@
         left: 0;
         opacity: 0;
         border-bottom: 1px solid #ddd;
-        border-radius: none;
+        border-radius: 0;
     }
+
+    /* The point where menu breaks on mobile */
+    .visible-xs {
+      display: none;
+    }
+    .hidden-xs {
+      display: inline;
+    }
+    @media screen and (max-width: 380px) {
+        .visible-xs {
+          display: inline;
+        }
+        .hidden-xs {
+          display: none;
+        }
+    }
+
     ul {
         position: absolute;
         display: inline-block;
@@ -55,6 +72,10 @@
                 &:active {
                     border-color: $link-color-border;
                 }
+            }
+            @media screen and (max-width: 380px) {
+                letter-spacing: 0;
+                padding: 0 7px;
             }
         }
         @media screen and (max-width: 768px) {

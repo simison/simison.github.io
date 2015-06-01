@@ -20,6 +20,10 @@ body#cv {
                 font-size: 140px;
                 line-height: 140px;
             }
+            @media all and (max-width: 480px) {
+                font-size: 100px;
+                line-height: 100px;
+            }
         }
     }
     #some {

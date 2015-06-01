@@ -512,8 +512,7 @@ var ApplicationConfiguration = (function() {
     // Close modal on Esc
     $document.bind('keydown', function(e) {
       if(e.which === 27) { // Esc
-        vm.closeCard();
-        //vm.$apply();
+        closeCard();
       }
     });
 
