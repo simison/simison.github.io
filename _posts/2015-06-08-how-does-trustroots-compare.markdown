@@ -10,7 +10,7 @@ no_dark_cover: false
 
 <span class="lead">Why should I join you guys and what's the difference?</span>
 
-We hear this question sometimes and it often includes phrases like <em>"—why don't you help BeWelcome instead?"</em> or <em>"—what's wrong with Couchsurfing?"</em>. Complete reply would be lengthy and complicated.
+We hear this question sometimes and it often includes phrases like <em>"—why don't you help BeWelcome instead?"</em> or <em>"—what's wrong with Couchsurfing?"</em>. Complete reply would be lengthy and complicated, but I'll give you some food for thought.
 
 About Couchsurfing many have written much better than I could and one of the latest good reads comes from Nithin Coca: <em>[The improbable rise and fall of Couchsurfing](http://kernelmag.dailydot.com/issue-sections/features-issue-sections/13124/life-and-death-couchsurfing/)</em>. Check it out.
 
