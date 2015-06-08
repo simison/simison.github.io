@@ -32,4 +32,4 @@ All this said; we wouldn't like to think Trustroots as an alternative to anythin
 
 <blockquote>Trustroots isn't on purpose an alternative to anything specifically. There are many people to whom Facebook, CouchSurfing or other tools aren't suitable for multitude of reasons. We encourage using any tools you wish in parallel. We are trying to make it easy to gather your contents from these sites also to Trustroots.</blockquote>
 
-_[Join Trustroots.org](httsp://www.trustroots.org/)_
+_[Join Trustroots.org](https://www.trustroots.org/)_
