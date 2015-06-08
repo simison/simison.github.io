@@ -28,4 +28,8 @@ I and others still support BW and help them if they need our help.
 
 In my comparison I included CouchSurfing, HospitalityClub, BeWelcome, WarmShowers and Trustroots since these are the sites that are — or in the past had — a change to become non-profit and open source. That's the only sustainable way of running hospitality exchange networks in our opinion.
 
+All this said; we wouldn't like to think Trustroots as an alternative to anything specifically. As Carlos said to me earlier, it just doesn't compare well on many aspects. In [our FAQ](https://www.trustroots.org/#!/faq) we write:
+
+<blockquote>Trustroots isn't on purpose an alternative to anything specifically. There are many people to whom Facebook, CouchSurfing or other tools aren't suitable for multitude of reasons. We encourage using any tools you wish in parallel. We are trying to make it easy to gather your contents from these sites also to Trustroots.</blockquote>
+
 _[Join Trustroots.org](httsp://www.trustroots.org/)_
