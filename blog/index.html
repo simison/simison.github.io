@@ -34,27 +34,15 @@ body_id: "blog-index"
             <div class="blog-index" id="content">
               {% for post in site.posts limit: site.recent_posts %}
               {% assign content = post.content %}
-                <article>
-                  <header>
+                <article class="blog-tile"{% if post.cover_image %} style="background-image: url('/covers/{{ post.cover_image }}')"{% endif %}>
+                  <a rel="full-article" href="{{ root_url }}{{ post.url }}" class="blog-tile-link">
+                    <div class="blog-tile-content">
                       {% include post/date.html %}
-                      <h1 class="entry-title"><a href="{{ root_url }}{{ post.url }}">{% if site.titlecase %}{{ post.title | titlecase }}{% else %}{{ post.title }}{% endif %}</a></h1>
-                  </header>
-                  <div class="entry-excerpt">
-                    <a href="{{ root_url }}{{ post.url }}">
-                      {{ content | strip_html | condense_spaces | truncate:150 }}
-                    </a>
-                  </div>
-                  <footer>
-                      <p class="entry-meta">
-                        {% if site.disqus_short_name and page.comments != false and post.comments != false and site.disqus_show_comment_count == true %}
-                           | <a href="{% if index %}{{ root_url }}{{ post.url }}{% endif %}#disqus_thread"
-                             data-disqus-identifier="{% if post.meta.disqus_id %}{{ post.meta.disqus_id }}{% else %}{{ site.url }}{{ post.url }}{% endif %}">Comments</a>
-                        {% endif %}
-                      </p>
-                    <a rel="full-article" href="{{ root_url }}{{ post.url }}" class="entry-more">Read on <i class="icon-right"></i></a>
-                  </footer>
+                      <h1 class="entry-title">{{ post.title }}</h1>
+                      <span class="entry-more">Read on <i class="icon-right"></i></span>
+                    </div>
+                  </a>
                 </article>
-                <hr/>
               {% endfor %}
 
               <div class="pagination">
