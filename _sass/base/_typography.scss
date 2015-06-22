@@ -204,3 +204,10 @@ article blockquote {
   white-space: pre-wrap;
   word-wrap: break-word;
 }
+
+abbr[title] {
+  border-bottom: 1px dotted transparent;
+  &:hover {
+    border-bottom-color: $text-highlight;
+  }
+}
