@@ -345,6 +345,8 @@ var ApplicationConfiguration = (function() {
   /* @ngInject */
   function AppController($log, $window, $document, $browser, $timeout) {
 
+    var resizeTimer;
+
     // ViewModel
     var vm = this;
 
@@ -355,20 +357,20 @@ var ApplicationConfiguration = (function() {
     //vm.windowWidth = $window.innerWidth;
 
     /**
-     * Improve scrolling performance by disabling hover during scroll events
-     * @link http://www.thecssninja.com/javascript/pointer-events-60fps
+     * Update variables when resizing window
      */
-    var resizeTimer;
-    angular.element($window).bind("resize", function() {
+    angular.element($window).bind("resize", calculateWindowSize);
+    angular.element($window).bind("orientationchange", calculateWindowSize);
 
-        if(resizeTimer !== false) $timeout.cancel(resizeTimer);
+    function calculateWindowSize() {
 
-        resizeTimer = $timeout(function(){
-            vm.windowHeight = $window.innerHeight;
-            resizeTimer = false;
-        }, 350);
-    });
+      if(resizeTimer !== false) $timeout.cancel(resizeTimer);
 
+      resizeTimer = $timeout(function(){
+        vm.windowHeight = $window.innerHeight;
+        resizeTimer = false;
+      }, 350);
+    }
 
     /**
      * Improve scrolling performance by disabling hover during scroll events
@@ -376,14 +378,14 @@ var ApplicationConfiguration = (function() {
      */
     var scrollTimer;
     angular.element($window).bind("scroll", function() {
-        vm.scrolling = true;
+      vm.scrolling = true;
 
-        if(scrollTimer !== false) $timeout.cancel(scrollTimer);
+      if(scrollTimer !== false) $timeout.cancel(scrollTimer);
 
-        scrollTimer = $timeout(function(){
-            vm.scrolling = false;
-            scrollTimer = false;
-        }, 350);
+      scrollTimer = $timeout(function(){
+        vm.scrolling = false;
+        scrollTimer = false;
+      }, 350);
 
     });
 
@@ -405,19 +407,19 @@ var ApplicationConfiguration = (function() {
         $headerTitle = angular.element("#page-header .title");
 
     angular.element($window).bind("scroll", function() {
-        var scrolly = $(window).scrollTop();
+      var scrolly = $(window).scrollTop();
 
-        // Navigation background color
-        $naviBg.css("opacity", scrolly / 70);
+      // Navigation background color
+      $naviBg.css("opacity", scrolly / 70);
 
-        // Header blurry images
-        if($coverBlur.length) $coverBlur.css("opacity", scrolly / 240);
+      // Header blurry images
+      if($coverBlur.length) $coverBlur.css("opacity", scrolly / 240);
 
-        // Fade v-link out when scrolling down
-        if($headerDown.length) $headerDown.css("opacity", -(scrolly / 70) + 1 );
+      // Fade v-link out when scrolling down
+      if($headerDown.length) $headerDown.css("opacity", -(scrolly / 70) + 1 );
 
-        // Title parallax
-        if($headerTitle.length) $headerTitle.css("padding-top", Math.round(scrolly / 3.5) + 'px' );
+      // Title parallax
+      if($headerTitle.length) $headerTitle.css("padding-top", Math.round(scrolly / 3.5) + 'px' );
 
     });
 
