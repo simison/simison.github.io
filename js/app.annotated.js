@@ -71,13 +71,14 @@
 // Init the application configuration module for AngularJS application
 var ApplicationConfiguration = (function() {
   // Init module configuration options
-  var applicationModuleName = 'mikaelkorpela';
+  var applicationModuleName = 'mk';
   var applicationModuleVendorDependencies = [
                                               'ngAnimate',
                                               'ngSanitize',
                                               'akoenig.deckgrid',
                                               'angular-flexslider',
-                                              'ui.keypress'
+                                              'ui.keypress',
+                                              '720kb.tooltips'
                                             ];
 
   // Add a new vertical module
@@ -294,43 +295,6 @@ var ApplicationConfiguration = (function() {
 
 })();
 */
-
-/*
- * Tooltips
- * Usage: <a href="#" tt title="I'm a tooltip!">Foo</a>
- */
-(function() {
-  'use strict';
-
-  angular
-    .module('app')
-    .directive('tt', mkTooltip);
-
-  /* @ngInject */
-  function mkTooltip($document) {
-    return function(scope, element, attr) {
-      element.hover(function(){
-        // Hover over code
-        var title = element.attr('title');
-        element.data('tipText', title).removeAttr('title');
-        $('<p class="tooltip"></p>')
-        .text(title)
-        .appendTo('body')
-        .fadeIn('fast');
-      }, function() {
-        // Hover out code
-        element.attr('title', element.data('tipText'));
-        $('.tooltip').remove();
-      }).mousemove(function(e) {
-        var mousex = e.pageX + 20; //Get X coordinates
-        var mousey = e.pageY + 10; //Get Y coordinates
-        $('.tooltip').css({ top: mousey, left: mousex });
-      });
-    };
-  }
-  mkTooltip.$inject = ['$document'];
-
-})();
 
 /**
  * Controller for Application

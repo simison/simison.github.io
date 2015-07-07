@@ -1,7 +1,7 @@
 # Site settings
 title: "Mikael Korpela"
-subtitle: "Modern nomad, an activist and a friend."
-description: "I'm a modern nomad, a free economy activist and a friend."
+subtitle: "Modern nomad, an activist and a geek."
+description: "I'm a modern nomad, a free economy activist and a geek."
 email: "mikael@ihminen.org"
 author: Mikael
 baseurl: "" # the subpath of your site, e.g. /blog/

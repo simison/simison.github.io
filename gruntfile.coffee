@@ -90,6 +90,7 @@ module.exports = (grunt) ->
           'bower_components/angular-flexslider/angular-flexslider.js'
           'bower_components/fancybox/source/jquery.fancybox.js'
           'bower_components/angular-ui-utils/modules/keypress/keypress.js'
+          'bower_components/angular-tooltips/src/js/angular-tooltips.js'
           'js/app.annotated.js'
         ]
         dest: 'js/app.js'

@@ -1,8 +1,11 @@
-$primary-color: #a6d549;
-$bg-color: #faf9f3;
+
 $container-gap: 20px;
 $navi-height: ($container-gap * 2);
-$link-color: #6f9622;
+
+// Colors
+$primary-color: #15a953;
+$bg-color: #fefbfb;
+$link-color: $primary-color;
 $link-color-hover: lighten($link-color, 10%);
 $link-color-border: $primary-color;
 $text-color: #111;
@@ -13,7 +16,11 @@ $text-color-lighter: $gray-lighter;
 $text-highlight: $primary-color;
 $hr-color: #111;
 
+// Tooltips
+$tooltip-bg-color: #111;
+$tooltip-text-color: #fff;
 
+// Typo
 $font-sans: 'Source Sans Pro', Helvetica, sans-serif;
 $font-serif: 'Noto Serif', Georgia, times, serif;
 $font-monospace: Menlo, Monaco, Consolas, "Courier New", monospace;

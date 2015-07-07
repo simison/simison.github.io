@@ -118,11 +118,6 @@ a {
     font-family: $font-sans;
 }
 
-.tooltip {
-    display: none;
-    position: absolute;
-    @extend .badge;
-}
 #to-top {
     margin: 30px auto;
     color: #000;

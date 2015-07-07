@@ -1,17 +1,4 @@
 
-
-//@import (inline) '../vendor/fontello-css/_glyphs.scss';
-
-//@import "compass";
-//@include global-reset;
-//@import "compass/css3/user-interface";
-//@import "compass/css3/border-radius";
-//@import "compass/css3/box-shadow";
-//@import "compass/css3/transition";
-//@import "compass/css3/transform";
-//@import "compass/css3/opacity";
-//@import "compass/css3/images";
-
 @import "mixins/border-radius";
 @import "mixins/transformations";
 @import "mixins/transition";
@@ -37,6 +24,7 @@
 @import "partials/recentposts";
 @import "partials/sharing";
 @import "partials/syntax-highlighting";
+@import "partials/tooltip";
 
 @import "pages/blog";
 @import "pages/cv";

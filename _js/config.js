@@ -3,13 +3,14 @@
 // Init the application configuration module for AngularJS application
 var ApplicationConfiguration = (function() {
   // Init module configuration options
-  var applicationModuleName = 'mikaelkorpela';
+  var applicationModuleName = 'mk';
   var applicationModuleVendorDependencies = [
                                               'ngAnimate',
                                               'ngSanitize',
                                               'akoenig.deckgrid',
                                               'angular-flexslider',
-                                              'ui.keypress'
+                                              'ui.keypress',
+                                              '720kb.tooltips'
                                             ];
 
   // Add a new vertical module

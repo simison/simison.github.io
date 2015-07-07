@@ -13,7 +13,8 @@
     "angular-ui-utils": "#master",
     "angular-scroll": "~0.7.1",
     "flexslider": "*",
-    "fancybox": "latest"
+    "fancybox": "latest",
+    "angular-tooltips": "~0.1.13"
   },
   "devDependencies": {},
   "ignore": [

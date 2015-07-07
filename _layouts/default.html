@@ -37,14 +37,14 @@
   <![endif]-->
   <link rel="profile" href="http://microformats.org/profile/hcard">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
-  <link rel="shortcut icon" href="/assets/img/favicon.png" type="image/png" />
-  <link rel="bookmark icon" href="/assets/img/favicon.png" type="image/png" />
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
+  <link rel="shortcut icon" href="/assets/img/favicon.png" type="image/png">
+  <link rel="bookmark icon" href="/assets/img/favicon.png" type="image/png">
   <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600;Noto+Serif:400" type="text/css">
   <link rel="stylesheet" href="/css/main.css?c={{ site.time | date_to_xmlschema | cgi_escape }}">
   <link rel="stylesheet" href="/assets/fontello/css/glyphs.css" type="text/css">
-  {% if site.facebook_like %}<link rel="dns-prefetch" href="//connect.facebook.net" />{% endif %}
-  <link rel="dns-prefetch" href="//mikaelkorpela.disqus.com" />
+  {% if site.facebook_like %}<link rel="dns-prefetch" href="//connect.facebook.net">{% endif %}
+  <link rel="dns-prefetch" href="//mikaelkorpela.disqus.com">
   {% include scripts/google_analytics.html %}
 </head>
 <body class="scrolling-{{ "{{ app.scrolling " }}}}"{% if page.body_id %} id="{{ page.body_id }}"{% endif %} ng-controller="AppController as app">
