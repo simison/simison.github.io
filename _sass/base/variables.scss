@@ -13,7 +13,7 @@ $gray-light: #444;
 $gray-lighter: #888;
 $text-color-light: $gray-light;
 $text-color-lighter: $gray-lighter;
-$text-highlight: $primary-color;
+$text-highlight: lighten($primary-color, 40%);
 $hr-color: #111;
 
 // Tooltips
