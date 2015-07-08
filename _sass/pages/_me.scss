@@ -25,16 +25,16 @@ body#me {
 	  border-bottom-color: $bg-color;
 	}
 
-	// Custom cover crazy color thingy
+  // The image on frontpage
 	#cover {
 		background-image: url('/covers/mantymetsa.jpg');
 		background-size: cover;
 	}
+  // Custom gradient overlay crazy color thingy
 	#cover-sharp {
-	    background-size: 200% 200%;
-	    -webkit-animation: MeBgAnim 30s ease infinite;
-	    animation: MeBgAnim 30s ease infinite;
-
+	    background-size: 150% 150%;
+      -webkit-animation: MeBgAnim 15s ease forwards;
+	    animation: MeBgAnim 15s ease forwards;
 			@include gradient-directional(#0000ff, #ff0000, 45deg);
 			opacity: 0.5;
 	}

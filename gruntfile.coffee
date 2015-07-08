@@ -62,8 +62,10 @@ module.exports = (grunt) ->
           "uglify"
           "exec:jekyll"
         ]
+
     jshint:
       build: jsFiles
+
     ngAnnotate:
       options:
         # true helps add where @ngInject is not used. It infers.
@@ -73,6 +75,7 @@ module.exports = (grunt) ->
       build:
         files:
           'js/app.annotated.js': jsFiles
+
     concat:
       build:
         options:
