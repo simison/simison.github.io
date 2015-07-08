@@ -93,8 +93,13 @@ html, body {
     }
 }
 
-.text-muted { color: #ccc; }
+.text-muted {
+  color: #ccc;
+}
 
+.text-underline {
+  border-bottom: 1px solid $link-color-border;
+}
 
 p, article blockquote, ul, ol { margin-bottom: 1.5em; }
 
