@@ -88,7 +88,7 @@
 }
 
 /* Menu items are white on these pages */
-#blog-subscribe {
+#subscribe {
     .menuitem {
       color: #fff;
     }
@@ -102,6 +102,6 @@ body#me .menuitem-me,
 body#cv .menuitem-cv,
 body#blog-index .menuitem-blog,
 body#blog-article .menuitem-blog,
-body#blog-subscribe .menuitem-blog {
+body#subscribe .menuitem-blog {
     border-color: $link-color-border;
 }

@@ -1,0 +1,93 @@
+
+#subscribe {
+    .title {
+        max-width: 650px;
+        height: 250px;
+    }
+    h1 {
+        font-size: 40px;
+        line-height: 45px;
+    }
+    #mc_embed_signup {
+        width: 310px;
+        margin: 0 0 50px 0;
+        clear: both;
+        overflow: hidden;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #mce-EMAIL {
+      border: 0;
+    }
+    #mc-embedded-subscribe,
+    .mc-field-group {
+        float: left;
+    }
+    @media only screen and (min-width: 481px) {
+      #mce-EMAIL {
+        @include border-left-radius($border-radius-base);
+      }
+      #mc-embedded-subscribe {
+        @include border-left-radius(0);
+      }
+    }
+    @media only screen and (max-width: 568px) {
+        .title {
+          height: 200px;
+          h1 {
+              padding-left: 10px;
+              padding-right: 10px;
+          }
+        }
+        h1 {
+            font-size: 25px;
+            line-height: 30px;
+        }
+        #mc_embed_signup {
+            width: 90%;
+            margin: 0 auto 20px auto;
+        }
+        #mce-EMAIL {
+          border-radius: $border-radius-base;
+        }
+        #mc-embedded-subscribe,
+        .mc-field-group {
+            float: none;
+            clear: both;
+            margin: 0 auto 10px auto;
+        }
+    }
+}
+
+
+/* Subscribe as a section instead of whole page */
+#subscribe.subscribe-footer {
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    color: #fff;
+    text-align: center;
+    h1 {
+        @extend .article-title-font;
+    }
+    hr {
+        width: 20%;
+        background: #fff;
+        border-color: #fff;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    background-position: center bottom;
+    background-image: url(/covers/northpole.jpg);
+    padding: 100px;
+    @media only screen and (max-width: 568px) {
+        padding: 50px;
+    }
+    @media
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi) {
+        background-image: url(/covers/northpole@2x.jpg);
+    }
+}
