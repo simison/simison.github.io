@@ -20,7 +20,6 @@
     vm.scrolling = false;
     vm.goToContent = goToContent;
     vm.windowHeight = $window.innerHeight;
-    //vm.windowWidth = $window.innerWidth;
 
     /**
      * Update variables when resizing window
@@ -42,15 +41,25 @@
      * Improve scrolling performance by disabling hover during scroll events
      * @link http://www.thecssninja.com/javascript/pointer-events-60fps
      */
-    var scrollTimer;
+    var scrollFalseTimer, scrollTrueTimer;
     angular.element($window).bind("scroll", function() {
-      vm.scrolling = true;
 
-      if(scrollTimer !== false) $timeout.cancel(scrollTimer);
+      // Set scroller flag
+      if(scrollTrueTimer !== false) {
+        $timeout.cancel(scrollTrueTimer);
+      }
+      scrollTrueTimer = $timeout(function(){
+        vm.scrolling = true;
+        scrollTrueTimer = false;
+      }, 100);
 
-      scrollTimer = $timeout(function(){
+      // Remove scroller flag
+      if(scrollFalseTimer !== false) {
+        $timeout.cancel(scrollFalseTimer);
+      }
+      scrollFalseTimer = $timeout(function(){
         vm.scrolling = false;
-        scrollTimer = false;
+        scrollFalseTimer = false;
       }, 350);
 
     });
@@ -68,15 +77,30 @@
      * Header animation while scrolling
      */
     var $naviBg = angular.element("#navigation-bg"),
+        $menuItems = angular.element("#navigation .menuitem"),
         $coverBlur = angular.element("#cover-blur"),
         $headerDown = angular.element("#page-header .down"),
         $headerTitle = angular.element("#page-header .title");
+
+    var whiteHeaderLinks = (["me", "cv"].indexOf(angular.element("body").attr("id")) > -1);
+    if(whiteHeaderLinks) {
+      $menuItems.css("color", "#fff");
+    }
 
     angular.element($window).bind("scroll", function() {
       var scrolly = $(window).scrollTop();
 
       // Navigation background color
       $naviBg.css("opacity", scrolly / 70);
+
+      // On these pages, start with white links
+      if(whiteHeaderLinks) {
+        if(scrolly < 25) {
+          $menuItems.css("color", "#fff");
+        } else {
+          $menuItems.attr("style", "");
+        }
+      }
 
       // Header blurry images
       if($coverBlur.length) $coverBlur.css("opacity", scrolly / 240);

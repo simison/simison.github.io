@@ -65,8 +65,8 @@
                 color: #000;
                 text-transform: uppercase;
                 text-decoration: none;
-                @include transition(all 0.2s linear);
                 border-bottom: 2px solid transparent;
+                @include transition(color 150ms ease-in-out);
                 &.active,
                 &:hover,
                 &:active {
