@@ -19,6 +19,7 @@ body#volunteering {
         text-align: center;
         .donate-heading {
             background: $primary-color;
+            color: #fff;
             padding-top: 1px;
             overflow: hidden;
             clear: both;
@@ -56,11 +57,6 @@ body#volunteering {
                 outline: none;
             }
         }
-        /*
-        .gratipay a {
-            color: #663300;
-        }
-        */
         .paypal {
             line-height: 11px;
         }
@@ -71,6 +67,10 @@ body#volunteering {
             a {
                 color: $text-color;
             }
+        }
+        .flattr {
+          margin-bottom: 1.0em;
+          margin-top: 1.5em;
         }
     }
     .volunteer-projects {
