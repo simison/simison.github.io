@@ -77,7 +77,6 @@ var ApplicationConfiguration = (function() {
                                               'ngSanitize',
                                               'akoenig.deckgrid',
                                               'angular-flexslider',
-                                              'ui.keypress',
                                               '720kb.tooltips'
                                             ];
 

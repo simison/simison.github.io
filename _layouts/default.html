@@ -67,9 +67,7 @@
     </ul>
   </nav>
 
-  <div ui-keydown="{esc: 'portfolio.card=false'}" tabindex="0">
-    {{ content | expand_urls: root_url }}
-  </div>
+  {{ content | expand_urls: root_url }}
 
   <script src="/js/app.min.js?c={{ site.time | date_to_xmlschema | cgi_escape }}" type="text/javascript"></script>
 </body>
