@@ -76,18 +76,24 @@ body#blog-index {
     #page-header {
         .title {
             max-width: 500px;
-            height: 350px;
+            height: 0;
         }
         h1 {
             font-size: 50px;
             line-height: 65px;
         }
         @media all and (max-width: 320px) {
+            .down {
+                display: none;
+            }
             h3 {
                 font-size: 20px;
                 line-height: 25px;
                 padding-left: 20px;
                 padding-right: 20px;
+            }
+            .title {
+              height: 300px;
             }
         }
         @media all and (max-height: 320px) {
