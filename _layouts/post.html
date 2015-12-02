@@ -11,7 +11,7 @@ body_id: "blog-article"
 
 {% unless page.no_header %}
 <header id="page-header">
-  <div class="title">
+  <div class="title" ng-style="{ height: (app.windowHeight / 2.5) }">
     <h1>{{ page.title }}</h1>
     <hr>
   </div>
