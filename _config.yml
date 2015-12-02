@@ -8,6 +8,7 @@ baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://www.mikaelkorpela.fi" # the base hostname & protocol for your site
 
 # Build settings
+gems: [jekyll-paginate]
 markdown: kramdown
 sass:
     style: :compressed
