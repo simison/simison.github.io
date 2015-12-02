@@ -13,7 +13,7 @@ These are very nicey square 7x7cm stickers. They're not superduper quality nor l
 
 And this is how they look. Pretty cool eh?
 
-<a href="http://hitchwiki.org/en/images/en/5/52/Hw-sticker-7x7cm%2B2mm-bleed.jpg" class="lightbox"><img alt="Hitchwiki sticker" src="http://hitchwiki.org/en/images/en/thumb/5/52/Hw-sticker-7x7cm%2B2mm-bleed.jpg/300px-Hw-sticker-7x7cm%2B2mm-bleed.jpg" width="300" height="300" srcset="http://hitchwiki.org/en/images/en/thumb/5/52/Hw-sticker-7x7cm%2B2mm-bleed.jpg/450px-Hw-sticker-7x7cm%2B2mm-bleed.jpg 1.5x, http://hitchwiki.org/en/images/en/thumb/5/52/Hw-sticker-7x7cm%2B2mm-bleed.jpg/600px-Hw-sticker-7x7cm%2B2mm-bleed.jpg 2x"></a>
+<a href="http://hitchwiki.org/en/images/en/2/20/Hw-sticker-98x98mm%2B2mm-bleed.jpg" class="lightbox"><img alt="Hitchwiki sticker" src="http://hitchwiki.org/en/images/en/thumb/2/20/Hw-sticker-98x98mm%2B2mm-bleed.jpg/600px-Hw-sticker-98x98mm%2B2mm-bleed.jpg" width="300" height="300"></a>
 
 Drop me a message at <a href="mailto:mikael@ihminen.org">mikael@ihminen.org</a> or [elsewhere](/) and tell me your postal address. Depending a bit on demand I'll send you a few stickers, lemme know if you have loooads of friends with whom to share these and I'll send a bit more.
 
