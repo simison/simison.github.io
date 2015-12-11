@@ -151,6 +151,12 @@
       "css": "arrow-left",
       "code": 59400,
       "src": "typicons"
+    },
+    {
+      "uid": "466d1430ec2e11e1aff10800200c9a66",
+      "css": "jabber",
+      "code": 59415,
+      "src": "brandico"
     }
   ]
 }
