@@ -11,8 +11,6 @@ Instead of `jekyll serve` you should run `grunt` (or for very verbose output `gr
 
 To simply build stuff, run `grunt build`.
 
-Run `rake deploy` to commit compiled `_site` folder to `gh-pages` branch.
-
 ## License
 - [MIT](LICENSE)
 - Use code however you wish :-)
