@@ -15,4 +15,4 @@ To simply build stuff, run `grunt build`.
 - [MIT](LICENSE)
 - Use code however you wish :-)
 - Texts and images copyright me. Don't use them.
-- Photos taken by Simona. Don't use them either.
+- Photos taken by [Simona](https://www.wanderlust.lt/). Don't use them either.
