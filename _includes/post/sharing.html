@@ -1,11 +1,22 @@
 <div class="entry-sharing">
   {% if site.facebook_btn %}
-    <div class="fb-like" data-href="{{ site.url }}{{ page.url }}" data-layout="button_count" data-action="recommend" data-show-faces="false" data-share="false"></div>
+    <div class="fb-like"
+         data-href="{{ site.url }}{{ page.url }}"
+         data-layout="button_count"
+         data-size="large"
+         data-action="recommend"
+         data-show-faces="false"
+         data-share="true"></div>
     {% include scripts/facebook_like.html %}
   {% endif %}
   {% if site.twitter_btn %}
     &nbsp;&nbsp;
-    <a href="//twitter.com/share" class="twitter-share-button" data-url="{{ site.url }}{{ page.url }}" data-via="{{ site.twitter_user }}" data-counturl="{{ site.url }}{{ page.url }}" >Tweet</a>
+    <a href="//twitter.com/share"
+       class="twitter-share-button"
+       data-url="{{ site.url }}{{ page.url }}"
+       data-via="{{ site.twitter_user }}"
+       data-size="large"
+       data-counturl="{{ site.url }}{{ page.url }}" >Tweet</a>
     {% include scripts/twitter_sharing.html %}
   {% endif %}
   {% if site.googleplus_btn %}
