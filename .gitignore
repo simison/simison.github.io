@@ -5,3 +5,4 @@ bower_components
 node_modules
 *.log
 js/app.js
+*~
