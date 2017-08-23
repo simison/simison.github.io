@@ -35,6 +35,8 @@ The price is actually mentioned, but it's hidden until you click little shopping
 
 Mentioned prices vary between 19$ and 75$ as CS is probably just A/B testing different sums to find optimal price point. 
 
+<h3>People are angry</h3>
+
 Twitter is full of complains from people who ended up losing their money. Here are just some:
 
 <blockquote class="twitter-tweet" data-partner="tweetdeck"><p lang="en" dir="ltr"><a href="https://twitter.com/Couchsurfing">@Couchsurfing</a> Question: why the fuck am I getting charged $60 to verify my account when this charge was never disclosed anywhere?</p>&mdash; Ed Geen Jetman (@GeneGetman) <a href="https://twitter.com/GeneGetman/status/898307334870532096">August 17, 2017</a></blockquote>
@@ -56,7 +58,8 @@ Twitter is full of complains from people who ended up losing their money. Here a
 Current CouchSurfing's <a href="https://www.couchsurfing.com/get_verified">get verified page</a> (<em>visible only for registered, non-verified members</em>), or <a href="/blog/images/cs-get-verified-page-06-2017.png">See screenshot (06/2017)</a>.
 
 <h3>Refunds hard to get</h3>
-For refunds, <a href="https://support.couchsurfing.org/hc/en-us/articles/214633027-Verification-Payment-Questions">you can fill a form</a> but <a href="https://twitter.com/Marionfyrd/status/899341152754839557">it will take a while</a> before they'll get back to you.
+
+If you verified and want a refund refunds, <a href="https://support.couchsurfing.org/hc/en-us/articles/214633027-Verification-Payment-Questions">you can fill a form</a> but <a href="https://twitter.com/Marionfyrd/status/899341152754839557">it will take a while</a> before they'll get back to you.
 
 Here's a better idea:
 
@@ -65,7 +68,8 @@ Here's a better idea:
 You indeed might be better resolving this via <a href="https://www.paypal.com/us/webapps/mpp/paypal-safety-and-security">PayPal's buyers protection</a> or you could open a dispute via your credit card company. You could also <a href="https://support.stripe.com/email?skip_login=true">contact Stripe</a> and explain them the situation. Stripe is CS's credit card payment gateway.
 
 <h3>Alternative</h3>
-Needless to say, I encourage you to try Trustroots as an <a href="https://www.trustroots.org/" title="CouchSurfing alternative">alternative</a> (I'm a co-founder). We're a <a href="https://www.trustroots.org/foundation">non-profit foundation</a> and good people you can trust.
+
+Needless to say, I encourage you to try <a href="https://www.trustroots.org/">Trustroots as an alternative</a> (I'm co-founder). We're a <a href="https://www.trustroots.org/foundation">non-profit foundation</a> and good people you can trust.
 
 Feel free to share this article!
 
