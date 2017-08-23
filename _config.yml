@@ -44,7 +44,7 @@ disqus_show_comment_count: false
 # Like buttons
 twitter_btn: true
 facebook_btn: true
-googleplus_btn: true
+googleplus_btn: false
 
 # Twitter
 twitter_username: simison
