@@ -1,7 +1,7 @@
 ---
 layout: post
-title: What's going on with unauthorised CouchSurfing verification payments?
-og_title: What's going on with unauthorised CouchSurfing verification payments?
+title: What's with unauthorised CouchSurfing verification payments?
+og_title: What's with unauthorised CouchSurfing verification payments?
 date: 2017-08-23 22:29:00 +0300
 comments: true
 categories: hospitalityexchange couchsurfing trustroots
@@ -19,8 +19,18 @@ That's pretty much what's been going on for the past few months. [CouchSurfing.c
 
 The price is actually mentioned, but it's hidden until you click little shopping cart icon which brings a dropdown with the price written in small grey text (via <a href="https://www.paypal.com/">PayPal</a>) or if you pay via <a href="https://stripe.com/">Stripe's</a> credit card popup, the price is visible in small grey text only when entering the card information.
 
-<img src="/blog/images/cs-verification-paypal-06-2017.png" alt="CouchSurfing verification via PayPal, screenshot"/>
-<img src="/blog/images/cs-verification-stripe-06-2017.png" alt="CouchSurfing verification via credit card, screenshot"/>
+<div class="clearfix" style="overflow: hidden;">
+<a href="/blog/images/cs-verification-paypal-06-2017.png" class="lightbox"><img src="/blog/images/cs-verification-paypal-06-2017.png" alt="CouchSurfing verification via PayPal, screenshot" class="img-responsive" style="
+  max-width: 50%;
+  float: left;
+  padding: 10px;
+"></a>
+<a href="/blog/images/cs-verification-stripe-06-2017.png" class="lightbox"><img src="/blog/images/cs-verification-stripe-06-2017.png" alt="CouchSurfing verification via credit card, screenshot" class="img-responsive" style="
+  max-width: 50%;
+  float: left;
+  padding: 10px;
+"></a>
+</div>
 
 Twitter is full of people complaining, here are just some:
 
@@ -46,4 +56,4 @@ Current CouchSurfing's <a href="https://www.couchsurfing.com/get_verified">get v
 
 For refunds, <a href="https://support.couchsurfing.org/hc/en-us/articles/214633027-Verification-Payment-Questions">you can fill a form</a> but <a href="https://twitter.com/Marionfyrd/status/899341152754839557">it will take a while</a> before they'll get back to you.
 
-<p class="lead>#CSGimmeMyMoneyBack</p>
+`#CSGimmeMyMoneyBack`
