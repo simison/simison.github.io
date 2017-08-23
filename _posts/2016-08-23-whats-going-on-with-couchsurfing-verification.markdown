@@ -14,7 +14,7 @@ photo_credit: Photo by [Freddie Collins](https://unsplash.com/photos/uXWPg9uMwt8
 
 <span class="lead">What's with unauthorised CouchSurfing verification payments? Verification system was never community's favourite but this time there's something more to it.</span>
 
-So this is how CouchSurfing currently operates: CS tells new members they can get added benefits by "verifying" their profiles. Verifying your identity is done using credit card. CS forgets to mention it actually costs. CS just grabs your money every year from that on.
+So this is how CouchSurfing currently operates: CS tells new members they can get added benefits by "verifying" their profiles. Verifying your identity is done using credit card. CS forgets to mention it actually costs. CS just grabs your money every year from then on.
 
 That's pretty much what's been going on for the past few months. [CouchSurfing.com](https://www.couchsurfing.com) is really making an effort hiding away all the mentions about verification not being free.
 
