@@ -14,7 +14,6 @@ photo_credit: Photo by [Freddie Collins](https://unsplash.com/photos/uXWPg9uMwt8
 
 <span class="lead">What's with unauthorised CouchSurfing verification payments? Verification system was never community's favourite but this time there's something more to it.</span>
 
-So this is how CouchSurfing currently operates: tell new members they can get added benefits by verifying themselves. Checking for their identity using credit card is easy. Forget to mention it actually costs. Just grab their money every year from that on.
 
 That's pretty much what's been going on for the past few months. [CouchSurfing.com](https://www.couchsurfing.com) is really making an effort hiding away all the mentions about verification not being free.
 
@@ -34,6 +33,8 @@ The price is actually mentioned, but it's hidden until you click little shopping
 </div>
 
 Twitter is full of people complaining, here are just some:
+Mentioned prices vary between 19$ and 75$ as CS is probably just A/B testing different sums to find optimal price point. 
+
 
 <blockquote class="twitter-tweet" data-partner="tweetdeck"><p lang="en" dir="ltr"><a href="https://twitter.com/Couchsurfing">@Couchsurfing</a> Question: why the fuck am I getting charged $60 to verify my account when this charge was never disclosed anywhere?</p>&mdash; Ed Geen Jetman (@GeneGetman) <a href="https://twitter.com/GeneGetman/status/898307334870532096">August 17, 2017</a></blockquote>
 
