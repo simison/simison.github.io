@@ -2,8 +2,8 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>Unauthorized CS verification payments</title>
-  <meta name="description" content="Information about unauthorized CS verification payments.">
+  <title>What's going on with unauthorized CouchSurfing verification payments?</title>
+  <meta name="description" content="Information about unauthorized CouchSurfing verification payments. There is an alternative.">
   <link href="//fonts.googleapis.com/css?family=Open+Sans:300,600" rel="stylesheet" type="text/css">
   <style>
   html, body {
@@ -26,6 +26,8 @@
   body {
     background: #8cd0f2;
     color: #fff;
+    line-height: 1.7em;
+    font-size: 1.2em;
     font-family: "Open Sans", helvetica, arial, sans-serif;
   }
 
@@ -50,13 +52,14 @@
     left: 0;
     right: 0;
     bottom: 0;
-    z-index: 100;
+    z-index: -1;
   }
 
   a {
     color: #c5f0de;
     border-bottom: 2px solid #c5f0de;
     text-decoration: none;
+    cursor: pointer;
   }
   a:hover, a:focus {
     transition: all 0.2s ease-in-out;
@@ -64,14 +67,13 @@
     color: #fff;
   }
   article {
-    max-width: 800px;
+    max-width: 500px;
     margin: 0 auto;
     padding: 50px;
-    z-index: 200;
   }
   h1 {
-    font-size: 50px;
-    line-height: 60px;
+    font-size: 37px;
+    line-height: 50px;
     font-weight: 600;
   }
   h3 {
@@ -79,13 +81,35 @@
     line-height: 40px;
     font-weight: 300;
   }
+  hr {
+    padding: 0;
+    border: none;
+    border-top: 2px solid #fff;
+    color: #fff;
+  }
   </style>
 </head>
 <body>
   <div class="background"></div>
 
   <article>
-    <h1>Unauthorized CS verification payments</h1>
+    <h1>What's going on with unauthorized CouchSurfing verification payments?</h1>
+
+    <br><br>
+
+    <a href="#" id="read_more_toggle" onClick="document.getElementById('read_more_toggle').style.display='none'; document.getElementById('read_more').style.display='block';">Read more</a>
+
+    <div style="display:none;" id="read_more">
+      So <a href="https://www.couchsurfing.com">Couchsurfing</a> is really making an effort hiding away all the mentions about verification not being free.
+      <br><br>
+      Now it seems like you're just verifying your name with your credit card... until you click the little shopping cart icon which brings a dropdown with the price written in small grey text (via <a href="https://www.paypal.com/">PayPal</a>) or if you pay via <a href="https://stripe.com/">Stripe's</a> credit card popup, the price is visible in small grey text only when entering the card information.
+      <br><br>
+      E.g. in Europe it's common to verify your identity using internet banking so that's naturally what people expect.
+      <br><br>
+      <a href="https://www.couchsurfing.com/get_verified">CouchSurfing's get verified page</a>
+      <br><br>
+      For refunds, <a href="https://support.couchsurfing.org/hc/en-us/articles/214633027-Verification-Payment-Questions">you can fill a form</a> but <a href="https://twitter.com/Marionfyrd/status/899341152754839557">it will take a while</a> before they'll get back to you.
+    </div>
 
     <br><br>
 
@@ -147,9 +171,17 @@
 
     <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr"><a href="https://twitter.com/Couchsurfing">@Couchsurfing</a> hey I&#39;ve paid 20$ on your website via my PayPal account. I thought your service was free...?</p>&mdash; Nicolas Van Muylder (@nicolasvanmu) <a href="https://twitter.com/nicolasvanmu/status/775943488437260288">September 14, 2016</a></blockquote>
 
+    <br><br>
+    <hr/>
+    <br><br>
 
-    <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+    <a href="https://www.trustroots.org/" title="CouchSurfing alternative">Looking for an alternative? Check Trustroots.org</a>
+
+    <br><br>
+
   </article>
+
+  <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 </body>
 </html>
