@@ -12,9 +12,7 @@ no_dark_cover: false
 photo_credit: Photo by [Freddie Collins](https://unsplash.com/photos/uXWPg9uMwt8)
 ---
 
-<span class="lead">
-What's with unauthorised CouchSurfing verification payments? Verification system was never community's favourite but this tiem there's something more to it.
-</span>
+<span class="lead">What's with unauthorised CouchSurfing verification payments? Verification system was never community's favourite but this time there's something more to it.</span>
 
 So this is how CouchSurfing currently operates: tell new members they can get added benefits by verifying themselves. Checking for their identity using credit card is easy. Forget to mention it actually costs. Just grab their money every year from that on.
 
@@ -59,4 +57,10 @@ Current CouchSurfing's <a href="https://www.couchsurfing.com/get_verified">get v
 
 For refunds, <a href="https://support.couchsurfing.org/hc/en-us/articles/214633027-Verification-Payment-Questions">you can fill a form</a> but <a href="https://twitter.com/Marionfyrd/status/899341152754839557">it will take a while</a> before they'll get back to you.
 
-`#CSGimmeMyMoneyBack`
+Here's a better idea:
+
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">So unethical. You should recommend those who verified to contact their credit cards or paypal - I bet they&#39;d refund faster than CS</p>&mdash; Nithin Coca (నితిన్) (@excinit) <a href="https://twitter.com/excinit/status/900475343760379904">August 23, 2017</a></blockquote>
+
+You indeed might be better resolving this via <a href="https://www.paypal.com/us/webapps/mpp/paypal-safety-and-security">PayPal's buyers protection</a> or you could open a dispute via your credit card company. You could also <a href="https://support.stripe.com/email?skip_login=true">contact Stripe</a> and explain them the situation. Stripe is CS's credit card payment gateway.
+
+Feel free to share this article! `#CSGimmeMyMoneyBack`
