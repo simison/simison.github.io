@@ -1,7 +1,8 @@
 ---
 layout: post
-title: What's with unauthorised CouchSurfing verification payments?
+title: CouchSurfing's questionable verification payments
 og_title: What's with unauthorised CouchSurfing verification payments?
+excerpt: CouchSurfing is really making an effort hiding away all the mentions about verification not being free and people are angry.
 date: 2017-08-23 22:29:00 +0300
 comments: true
 categories: hospitalityexchange couchsurfing trustroots
@@ -12,8 +13,10 @@ photo_credit: Photo by [Freddie Collins](https://unsplash.com/photos/uXWPg9uMwt8
 ---
 
 <span class="lead">
-So this is how CouchSurfing currently operates: tell new members they can get added benefits by verifying themselves. Checking for their identity using credit card is easy. Forget to mention it actually costs. Just grab their money every year from that on.
+What's with unauthorised CouchSurfing verification payments? Verification system was never community's favourite but this tiem there's something more to it.
 </span>
+
+So this is how CouchSurfing currently operates: tell new members they can get added benefits by verifying themselves. Checking for their identity using credit card is easy. Forget to mention it actually costs. Just grab their money every year from that on.
 
 That's pretty much what's been going on for the past few months. [CouchSurfing.com](https://www.couchsurfing.com) is really making an effort hiding away all the mentions about verification not being free.
 
