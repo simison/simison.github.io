@@ -18,7 +18,7 @@ So this is how CouchSurfing currently operates: CS tells new members they can ge
 
 That's pretty much what's been going on for the past few months. [CouchSurfing.com](https://www.couchsurfing.com) is really making an effort hiding away all the mentions about verification not being free.
 
-The price is actually mentioned, but it's hidden until you click little shopping cart icon which brings a dropdown with the price written in small grey text (via <a href="https://www.paypal.com/">PayPal</a>) or if you pay via <a href="https://stripe.com/">Stripe's</a> credit card popup, the price is visible in small grey text only when entering the card information.
+The price is actually mentioned, but it's hidden until you click little shopping cart icon which brings a dropdown with the price written in small grey text (via PayPal) or if you pay via Stripe's credit card popup, the price is visible in small grey text only when entering the card information. Click images to see them bigger.
 
 <div class="clearfix" style="overflow: hidden;">
 <a href="/blog/images/cs-verification-paypal-06-2017.png" class="lightbox"><img src="/blog/images/cs-verification-paypal-06-2017.png" alt="CouchSurfing verification via PayPal, screenshot" class="img-responsive" style="
@@ -65,7 +65,7 @@ Here's a better idea:
 You indeed might be better resolving this via <a href="https://www.paypal.com/us/webapps/mpp/paypal-safety-and-security">PayPal's buyers protection</a> or you could open a dispute via your credit card company. You could also <a href="https://support.stripe.com/email?skip_login=true">contact Stripe</a> and explain them the situation. Stripe is CS's credit card payment gateway.
 
 <h3>Alternative</h3>
-Needless to say, I encourage you to try Trustroots as an <a href="https://www.trustroots.org/" title="CouchSurfing alternative">alternative</a> (I'm a co-founder). We're <a href="https://www.trustroots.org/foundation">a registered non-profit</a> and good people you can trust.
+Needless to say, I encourage you to try Trustroots as an <a href="https://www.trustroots.org/" title="CouchSurfing alternative">alternative</a> (I'm a co-founder). We're a <a href="https://www.trustroots.org/foundation">non-profit foundation</a> and good people you can trust.
 
 Feel free to share this article!
 
