@@ -53,7 +53,7 @@ Twitter is full of complains from people who ended up losing their money. Here a
 
 <em>CouchSurfing, you really think this is a great way of doing business?</em>
 
-Current CouchSurfing's <a href="https://www.couchsurfing.com/get_verified">get verified page</a> (visible only for registered, non-verified members), or <a href="/blog/images/cs-get-verified-page-06-2017.png">See screenshot (06/2017)</a>.
+Current CouchSurfing's <a href="https://www.couchsurfing.com/get_verified">get verified page</a> (<em>visible only for registered, non-verified members</em>), or <a href="/blog/images/cs-get-verified-page-06-2017.png" class="lightbox">See screenshot (06/2017)</a>.
 
 <h3>Refunds hard to get</h3>
 For refunds, <a href="https://support.couchsurfing.org/hc/en-us/articles/214633027-Verification-Payment-Questions">you can fill a form</a> but <a href="https://twitter.com/Marionfyrd/status/899341152754839557">it will take a while</a> before they'll get back to you.
