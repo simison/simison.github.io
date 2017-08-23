@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title>Unauthorized CS verification payments</title>
-  <meta name="description" content="Something fishy is going on regarding unauthorized CS verification payments...">
+  <meta name="description" content="Information about unauthorized CS verification payments.">
   <link href="//fonts.googleapis.com/css?family=Open+Sans:300,600" rel="stylesheet" type="text/css">
   <style>
   html, body {
@@ -24,6 +24,12 @@
   }
 
   body {
+    background: #8cd0f2;
+    color: #fff;
+    font-family: "Open Sans", helvetica, arial, sans-serif;
+  }
+
+  .background {
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#8cd0f2+0,23ac74+100 */
     background: #8cd0f2; /* Old browsers */
     background: -moz-linear-gradient(45deg, #8cd0f2 0%, #23ac74 100%); /* FF3.6+ */
@@ -39,9 +45,14 @@
     -webkit-animation: bgAnim 15s ease infinite;
 	  animation: bgAnim 15s ease infinite;
 
-    color: #fff;
-    font-family: "Open Sans", helvetica, arial, sans-serif;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 100;
   }
+
   a {
     color: #c5f0de;
     border-bottom: 2px solid #c5f0de;
@@ -56,6 +67,7 @@
     max-width: 800px;
     margin: 0 auto;
     padding: 50px;
+    z-index: 200;
   }
   h1 {
     font-size: 50px;
@@ -70,6 +82,7 @@
   </style>
 </head>
 <body>
+  <div class="background"></div>
 
   <article>
     <h1>Unauthorized CS verification payments</h1>
