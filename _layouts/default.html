@@ -8,7 +8,8 @@
   <meta name="HandheldFriendly" content="True">
   <meta name="format-detection" content="telephone=no">
   <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
-  <meta property="og:title" content="{% if page.title %}{% if site.titlecase %}{{ page.title | titlecase }}{% else %}{{ page.title }}{% endif %}{% endif %}">
+
+  <meta property="og:title" content="{% if page.og_title %}{{ page.og_title }}{% elsif page.title %}{% if site.titlecase %}{{ page.title | titlecase }}{% else %}{{ page.title }}{% endif %}{% endif %}">
   <meta property="og:site_name" content="{{ site.title }}">
   <meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
   <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
@@ -18,7 +19,9 @@
   <meta property="og:image" content="{{ site.url }}/assets/img/badge.jpg">
   {% if site.facebook_app_id %}<meta property="fb:app_id" content="{{ site.facebook_app_id }}">{% endif %}
   {% if site.facebook_admins %}<meta property="fb:admins" content="{{ site.facebook_admins }}">{% endif %}
-  <meta name="twitter:title" content="{% if page.title %}{% if site.titlecase %}{{ page.title | titlecase }}{% else %}{{ page.title }}{% endif %}{% endif %}">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{% if page.og_title %}{{ page.og_title }}{% elsif page.title %}{% if site.titlecase %}{{ page.title | titlecase }}{% else %}{{ page.title }}{% endif %}{% endif %}">
   <meta name="twitter:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
   <meta name="twitter:url" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   {% if page.og_image %}
