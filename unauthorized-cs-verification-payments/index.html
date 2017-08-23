@@ -12,23 +12,19 @@
     height: 100%;
   }
 
-  @-webkit-keyframes bgAnim {
-    0%{ background-position: 0% 50% }
-    50%{ background-position: 100% 50% }
-    100%{ background-position: 0% 50% }
-  }
-  @keyframes bgAnim {
-    0%{ background-position: 0% 50% }
-    50%{ background-position: 100% 50% }
-    100%{ background-position: 0% 50% }
-  }
-
   body {
     background: #8cd0f2;
     color: #fff;
+    font-family: "Open Sans", helvetica, arial, sans-serif;
     line-height: 1.7em;
     font-size: 1.2em;
-    font-family: "Open Sans", helvetica, arial, sans-serif;
+  }
+
+  @media (max-width: 480px) {
+    body {
+      line-height: 1.5em;
+      font-size: 1em;
+    }
   }
 
   .background {
@@ -41,11 +37,6 @@
     background: -ms-linear-gradient(45deg, #8cd0f2 0%,#23ac74 100%); /* IE10+ */
     background: linear-gradient(45deg, #8cd0f2 0%,#23ac74 100%); /* W3C */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8cd0f2', endColorstr='#23ac74',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-
-    /* Animate that stuff */
-	  background-size: 200% 200%;
-    -webkit-animation: bgAnim 15s ease infinite;
-	  animation: bgAnim 15s ease infinite;
 
     position: fixed;
     top: 0;
@@ -69,7 +60,7 @@
   article {
     max-width: 500px;
     margin: 0 auto;
-    padding: 50px;
+    padding: 50px 25px 200px 25px;
   }
   h1 {
     font-size: 37px;
@@ -93,9 +84,7 @@
   <div class="background"></div>
 
   <article>
-    <h1>What's going on with unauthorized CouchSurfing verification payments?</h1>
-
-    <br><br>
+    <h1>What's going on with unauthorized CouchSurfing verification payments? #CSGimmeMyMoneyBack</h1>
 
     <a href="#" id="read_more_toggle" onClick="document.getElementById('read_more_toggle').style.display='none'; document.getElementById('read_more').style.display='block';">Read more</a>
 
@@ -113,6 +102,10 @@
 
     <br><br>
 
+    <strong>People keep writing about it on Twitter:</strong>
+
+    <br><br>
+<!--
     <blockquote class="twitter-tweet" data-partner="tweetdeck"><p lang="en" dir="ltr"><a href="https://twitter.com/Couchsurfing">@Couchsurfing</a> I was charged a fee I never authorized and I want it back. There&#39;s no customer service number. I need it ASAP.</p>&mdash; absurde nuit (@fouabsent) <a href="https://twitter.com/fouabsent/status/900336193161834500">August 23, 2017</a></blockquote>
 
     <blockquote class="twitter-tweet" data-partner="tweetdeck"><p lang="en" dir="ltr"><a href="https://twitter.com/Couchsurfing">@Couchsurfing</a> when you say join for free why was i charged an annual membership this year.</p>&mdash; Surabhi Rao (@rogue1606) <a href="https://twitter.com/rogue1606/status/900327906785640449">August 23, 2017</a></blockquote>
@@ -170,14 +163,9 @@
     <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">so <a href="https://twitter.com/Couchsurfing">@Couchsurfing</a> how much does verification actually cost? I am not seeing any prices on the page at all. No blue shaded box either.</p>&mdash; raincoaster (@raincoaster) <a href="https://twitter.com/raincoaster/status/801155919140753409">November 22, 2016</a></blockquote>
 
     <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr"><a href="https://twitter.com/Couchsurfing">@Couchsurfing</a> hey I&#39;ve paid 20$ on your website via my PayPal account. I thought your service was free...?</p>&mdash; Nicolas Van Muylder (@nicolasvanmu) <a href="https://twitter.com/nicolasvanmu/status/775943488437260288">September 14, 2016</a></blockquote>
+  -->
 
-    <br><br>
-    <hr/>
-    <br><br>
-
-    <a href="https://www.trustroots.org/" title="CouchSurfing alternative">Looking for an alternative? Check Trustroots.org</a>
-
-    <br><br>
+    <a class="twitter-moment" href="https://twitter.com/i/moments/900365776133206016">#CSGimmeMyMoneyBack</a>
 
   </article>
 
