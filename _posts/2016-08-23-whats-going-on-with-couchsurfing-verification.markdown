@@ -53,10 +53,9 @@ Twitter is full of complains from people who ended up losing their money. Here a
 
 <em>CouchSurfing, you really think this is a great way of doing business?</em>
 
-Needless to say, I encourage you to try Trustroots as an <a href="https://www.trustroots.org/" title="CouchSurfing alternative">alternative</a>. We're <a href="https://www.trustroots.org/faq/foundation">a registered non-profit</a> and good people.
-
 Current CouchSurfing's <a href="https://www.couchsurfing.com/get_verified">get verified page</a> (visible only for registered, non-verified members), or <a href="/blog/images/cs-get-verified-page-06-2017.png">See screenshot (06/2017)</a>.
 
+<h3>Refunds hard to get</h3>
 For refunds, <a href="https://support.couchsurfing.org/hc/en-us/articles/214633027-Verification-Payment-Questions">you can fill a form</a> but <a href="https://twitter.com/Marionfyrd/status/899341152754839557">it will take a while</a> before they'll get back to you.
 
 Here's a better idea:
@@ -65,4 +64,9 @@ Here's a better idea:
 
 You indeed might be better resolving this via <a href="https://www.paypal.com/us/webapps/mpp/paypal-safety-and-security">PayPal's buyers protection</a> or you could open a dispute via your credit card company. You could also <a href="https://support.stripe.com/email?skip_login=true">contact Stripe</a> and explain them the situation. Stripe is CS's credit card payment gateway.
 
-Feel free to share this article! `#CSGimmeMyMoneyBack`
+<h3>Alternative</h3>
+Needless to say, I encourage you to try Trustroots as an <a href="https://www.trustroots.org/" title="CouchSurfing alternative">alternative</a> (I'm a co-founder). We're <a href="https://www.trustroots.org/foundation">a registered non-profit</a> and good people you can trust.
+
+Feel free to share this article!
+
+`#CSGimmeMyMoneyBack`
