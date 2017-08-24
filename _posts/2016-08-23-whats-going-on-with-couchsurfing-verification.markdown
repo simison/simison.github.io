@@ -35,7 +35,9 @@ The price <b>is</b> actually mentioned, but it's hidden until you click little s
 
 So there are multiple setups of verification going on, depending on which A/B test group you might fall into. Prices vary between 19$ and 75$ as they're testing different sums to find optimal price point. Visuals of that verification page might be different to different users as well. Sometimes it's pay once for lifetime fee, sometimes an annual fee.
 
-While it might feel that giving by your credit card information online will get you charged, we absolutely should restrain from victim blaming. The the price should just be upfront visible, the only reason not to do so is to trick people into it. I reached out for comments from Stripe and Paypal as this surely goes against their service agreements. Stripe commented back:
+While it might feel that giving by your credit card information online will get you charged, we absolutely should restrain from victim blaming. The the price should just be upfront visible, the only reason not to do so is to trick people into it.
+
+I reached out for comments from Stripe and Paypal as this surely goes against their service agreements. Stripe commented back:
 
 <blockquote><em>I can say with certainty that all appropriate actions will be taken and we will follow up with the owner of this business as necessary.</em></blockquote>
 
