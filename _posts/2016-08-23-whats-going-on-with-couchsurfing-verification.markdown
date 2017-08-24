@@ -14,11 +14,11 @@ photo_credit: Photo by [Freddie Collins](https://unsplash.com/photos/uXWPg9uMwt8
 
 <span class="lead">What's with unauthorised CouchSurfing verification payments? Verification system was never community's favourite but this time there's something more to it.</span>
 
-So this is how CouchSurfing currently operates: CS tells new members they can get added benefits by "verifying" their profiles. Verifying your identity is done using credit card. CS forgets to mention it actually costs. CS just grabs your money every year from then on, if you ended on having an annual plan.
+So this is how CouchSurfing currently operates: CS tells new members they can get added benefits by "verifying" their profiles. Verifying your identity is done using credit card. CS forgets to clearly mention it actually costs. CS just grabs your money every year from then on, if you ended on having an annual plan.
 
 That's pretty much what's been going on for the past few months. [CouchSurfing.com](https://www.couchsurfing.com) is really making an effort hiding away all the mentions about verification not being free.
 
-The price <b>is</b> actually mentioned, but it's hidden until you click little shopping cart icon which brings a dropdown with the price written in small grey text (via PayPal) or if you pay via Stripe's credit card popup, the price is visible in small grey text only when entering the card information. Click images to see them bigger. The price is never mentioned anywhere on the actual verification page.
+The price <em>is</em> actually mentioned, but it's hidden until you click little shopping cart icon which brings a dropdown with the price written in small grey text (via PayPal) or if you pay via Stripe's credit card popup, the price is visible in small grey text only when entering the card information. Click images to see them bigger. The price is never mentioned anywhere on the actual verification page.
 
 <div class="clearfix" style="overflow: hidden;">
 <a href="/blog/images/cs-verification-paypal-06-2017.png" class="lightbox"><img src="/blog/images/cs-verification-paypal-06-2017.png" alt="CouchSurfing verification via PayPal, screenshot" class="img-responsive" style="
