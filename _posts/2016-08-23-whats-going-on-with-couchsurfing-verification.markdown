@@ -66,8 +66,6 @@ Twitter is full of complains from people who ended up losing their money. Here a
 
 <em>CouchSurfing, you really think this is a great way of doing business?</em>
 
-Current CouchSurfing's <a href="https://www.couchsurfing.com/get_verified">get verified page</a> (<em>visible only for registered, non-verified members</em>), or just see screenshots from <a href="/blog/images/cs-get-verified-page-06-2017.png">June</a> and <a href="/blog/images/cs-get-verified-page-08-2017.png">August</a> 2017.
-
 
 <h3>How to get refunds — #CSGimmeMyMoneyBack</h3>
 
