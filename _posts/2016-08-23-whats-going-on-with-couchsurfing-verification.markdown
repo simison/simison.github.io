@@ -18,7 +18,7 @@ So this is how CouchSurfing currently operates: CS tells new members they can ge
 
 That's pretty much what's been going on for the past few months. [CouchSurfing.com](https://www.couchsurfing.com) is really making an effort hiding away all the mentions about verification not being free.
 
-The price is actually mentioned, but it's hidden until you click little shopping cart icon which brings a dropdown with the price written in small grey text (via PayPal) or if you pay via Stripe's credit card popup, the price is visible in small grey text only when entering the card information. Click images to see them bigger. The price is never mentioned anywhere, before hitting "verify".
+The price <b>is</b> actually mentioned, but it's hidden until you click little shopping cart icon which brings a dropdown with the price written in small grey text (via PayPal) or if you pay via Stripe's credit card popup, the price is visible in small grey text only when entering the card information. Click images to see them bigger. The price is never mentioned anywhere on the actual verification page.
 
 <div class="clearfix" style="overflow: hidden;">
 <a href="/blog/images/cs-verification-paypal-06-2017.png" class="lightbox"><img src="/blog/images/cs-verification-paypal-06-2017.png" alt="CouchSurfing verification via PayPal, screenshot" class="img-responsive" style="
@@ -34,6 +34,11 @@ The price is actually mentioned, but it's hidden until you click little shopping
 </div>
 
 So there are multiple setups of verification going on, depending on which A/B test group you might fall into. Prices vary between 19$ and 75$ as they're testing different sums to find optimal price point. Visuals of that verification page might be different to different users as well. Sometimes it's pay once for lifetime fee, sometimes an annual fee.
+
+While it might feel that giving by your credit card information online will get you charged, we absolutely should restrain from victim blaming. The the price should just be upfront visible, the only reason not to do so is to trick people into it. I reached out for comments from Stripe and Paypal as this surely goes against their service agreements. Stripe commented back:
+
+<blockquote><em>I can say with certainty that all appropriate actions will be taken and we will follow up with the owner of this business as necessary.</em></blockquote>
+
 
 <h3>People are angry</h3>
 
@@ -55,9 +60,9 @@ Twitter is full of complains from people who ended up losing their money. Here a
 
 <em>CouchSurfing, you really think this is a great way of doing business?</em>
 
-Current CouchSurfing's <a href="https://www.couchsurfing.com/get_verified">get verified page</a> (<em>visible only for registered, non-verified members</em>), or <a href="/blog/images/cs-get-verified-page-06-2017.png">See screenshot (06/2017)</a>.
+Current CouchSurfing's <a href="https://www.couchsurfing.com/get_verified">get verified page</a> (<em>visible only for registered, non-verified members</em>), or just see screenshots from <a href="/blog/images/cs-get-verified-page-06-2017.png">June</a> and <a href="/blog/images/cs-get-verified-page-08-2017.png">August</a> 2017.
 
-<h3>Refunds hard to get</h3>
+<h3>How to get refunds — #CSGimmeMyMoneyBack</h3>
 
 If you verified and want a refund refunds, <a href="https://support.couchsurfing.org/hc/en-us/articles/214633027-Verification-Payment-Questions">you can fill a form</a> but <a href="https://twitter.com/Marionfyrd/status/899341152754839557">it will take a while</a> before they'll get back to you.
 
@@ -74,5 +79,3 @@ Now I'm in a bit tricky position to write such an article, because I'm working o
 If you still prefer using CouchSurfing, please let them know this is not okay.
 
 Feel free to share this article!
-
-`#CSGimmeMyMoneyBack`
