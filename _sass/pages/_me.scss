@@ -45,6 +45,8 @@ body#me {
 	// Crazy size changes for my name
 	#page-header {
 	    .title {
+          z-index: 1; // Make texts/links clickable in header
+
 	        @media all and (max-width: 599px) {
 	            height: 450px;
 	        }
