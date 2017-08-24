@@ -14,11 +14,11 @@ photo_credit: Photo by [Freddie Collins](https://unsplash.com/photos/uXWPg9uMwt8
 
 <span class="lead">What's with unauthorised CouchSurfing verification payments? Verification system was never community's favourite but this time there's something more to it.</span>
 
-So this is how CouchSurfing currently operates: CS tells new members they can get added benefits by "verifying" their profiles. Verifying your identity is done using credit card. CS forgets to mention it actually costs. CS just grabs your money every year from then on.
+So this is how CouchSurfing currently operates: CS tells new members they can get added benefits by "verifying" their profiles. Verifying your identity is done using credit card. CS forgets to mention it actually costs. CS just grabs your money every year from then on, if you ended on having an annual plan.
 
 That's pretty much what's been going on for the past few months. [CouchSurfing.com](https://www.couchsurfing.com) is really making an effort hiding away all the mentions about verification not being free.
 
-The price is actually mentioned, but it's hidden until you click little shopping cart icon which brings a dropdown with the price written in small grey text (via PayPal) or if you pay via Stripe's credit card popup, the price is visible in small grey text only when entering the card information. Click images to see them bigger.
+The price is actually mentioned, but it's hidden until you click little shopping cart icon which brings a dropdown with the price written in small grey text (via PayPal) or if you pay via Stripe's credit card popup, the price is visible in small grey text only when entering the card information. Click images to see them bigger. The price is never mentioned anywhere, before hitting "verify".
 
 <div class="clearfix" style="overflow: hidden;">
 <a href="/blog/images/cs-verification-paypal-06-2017.png" class="lightbox"><img src="/blog/images/cs-verification-paypal-06-2017.png" alt="CouchSurfing verification via PayPal, screenshot" class="img-responsive" style="
@@ -33,7 +33,7 @@ The price is actually mentioned, but it's hidden until you click little shopping
 "></a>
 </div>
 
-Mentioned prices vary between 19$ and 75$ as CS is probably just A/B testing different sums to find optimal price point. 
+So there are multiple setups of verification going on, depending on which A/B test group you might fall into. Prices vary between 19$ and 75$ as they're testing different sums to find optimal price point. Visuals of that verification page might be different to different users as well. Sometimes it's pay once for lifetime fee, sometimes an annual fee.
 
 <h3>People are angry</h3>
 
@@ -69,7 +69,9 @@ You indeed might be better resolving this via <a href="https://www.paypal.com/us
 
 <h3>Alternative</h3>
 
-Needless to say, I encourage you to try <a href="https://www.trustroots.org/">Trustroots as an alternative</a> (I'm co-founder). We're a <a href="https://www.trustroots.org/foundation">non-profit foundation</a> and good people you can trust.
+Now I'm in a bit tricky position to write such an article, because I'm working on a similar project to CS. Typically I'm retraining from stirring too much negativity into air around hospitality exchange, because I think we have better things to concentrate on. This time I just felt this was important and after watching this happen all summer, I just had to point it out. Needless to say, I encourage you to give a try to <a href="https://www.trustroots.org/">Trustroots as an alternative</a> (I'm co-founder). We're a <a href="https://www.trustroots.org/foundation">non-profit foundation</a> and good people you can trust.
+
+If you still prefer using CouchSurfing, please let them know this is not okay.
 
 Feel free to share this article!
 
