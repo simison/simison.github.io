@@ -42,7 +42,7 @@ Just look at that mountain of activity this summer!
 _Thank you so much for
 [niftylettuce](https://github.com/niftylettuce),
 [OmgImAlexis](https://github.com/OmgImAlexis),
-[lushc](https://github.com/lushc)
+[lushc](https://github.com/lushc),
 [joeframbach](https://github.com/joeframbach),
 [emhagman](https://github.com/emhagman),
 [michelem09](https://github.com/michelem09) and others for your help & activity! And of course thanks to [rschmukler](https://github.com/rschmukler) for letting us help._
