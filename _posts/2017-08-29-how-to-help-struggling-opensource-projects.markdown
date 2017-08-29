@@ -37,10 +37,6 @@ Just look at that mountain of activity this summer!
 
 <a href="https://github.com/agenda/agenda/graphs/contributors" title="Contributor activity on Agenda"><img src="/blog/images/agenda-activity.png" width="700" height="214" class="img-responsive" alt="Contributor activity on Agenda"></a>
 
-I even spent 10 minutes making a pretty little logo. That's nothing critical, but it will make the project seem more serious and thus again inspire people to use it and work on it.
-
-<div style="text-align: center;"><a href="https://github.com/agenda/agenda/" title="Agenda - A light-weight job scheduling library for Node.js"><img src="/blog/images/agenda-slogan.png" width="376" height="154" class="img-responsive" alt="Agenda - A light-weight job scheduling library for Node.js"></a></div>
-
 <h3>Kudos!</h3>
 
 _Thank you so much for
@@ -50,6 +46,8 @@ _Thank you so much for
 [joeframbach](https://github.com/joeframbach),
 [emhagman](https://github.com/emhagman),
 [michelem09](https://github.com/michelem09) and others for your help & activity! And of course thanks to [rschmukler](https://github.com/rschmukler) for letting us help._
+
+<div style="text-align: center;"><a href="https://github.com/agenda/agenda/" title="Agenda - A light-weight job scheduling library for Node.js"><img src="/blog/images/agenda-slogan.png" width="376" height="154" class="img-responsive" alt="Agenda - A light-weight job scheduling library for Node.js"></a></div>
 
 <h3>Wanna work on open source?</h3>
 
