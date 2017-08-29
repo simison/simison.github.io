@@ -52,3 +52,5 @@ _Thank you so much for
 <h3>Wanna work on open source?</h3>
 
 Looking for working on open source projects but don't quite know where to start? Hesitant with your programming skills? You can help out in other ways. It's as rewarding to help by replying support messages and just simply inspiring and supporting others to do the work.
+
+PS. Found a typo from this article? [Send me a pull request on GitHub!](https://github.com/simison/simison.github.io/edit/master/_posts/2017-08-29-how-to-help-struggling-opensource-projects.markdown)
