@@ -41,6 +41,8 @@ I even spent 10 minutes making a pretty little logo. That's nothing critical, bu
 
 <div style="text-align: center;"><a href="https://github.com/agenda/agenda/" title="Agenda - A light-weight job scheduling library for Node.js"><img src="/blog/images/agenda-slogan.png" width="376" height="154" class="img-responsive" alt="Agenda - A light-weight job scheduling library for Node.js"></a></div>
 
+<h3>Kudos!</h3>
+
 _Thank you so much for
 [niftylettuce](https://github.com/niftylettuce),
 [OmgImAlexis](https://github.com/OmgImAlexis),
