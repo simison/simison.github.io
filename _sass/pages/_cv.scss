@@ -7,9 +7,9 @@ body#cv {
     #page-header {
         .title {
             width: 80%;
+            height: 350px;
             @media screen and (max-width: 970px) {
                 width: 95%;
-                height: 350px;
             }
             text-align: left;
         }
