@@ -17,10 +17,12 @@ body#cv {
             font-size: 200px;
             line-height: 200px;
             @media screen and (max-width: 768px) {
+                height: 120px;
                 font-size: 100px;
                 line-height: 100px;
             }
             @media all and (max-width: 480px) {
+                height: 120px;
                 font-size: 60px;
                 line-height: 60px;
             }
