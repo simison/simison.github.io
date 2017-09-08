@@ -1,7 +1,7 @@
 # Site settings
 title: "Mikael Korpela"
-subtitle: "Modern nomad, an activist and a geek."
-description: "I'm a modern nomad, a free economy activist and a geek."
+subtitle: "Maker, tinkerer, geek and pragmatic open source and free economy activist."
+description: "I'm a maker, tinkerer, geek. Pragmatic open source and free economy activist. Kind of modern nomad."
 email: "mikael@ihminen.org"
 author: Mikael
 baseurl: "" # the subpath of your site, e.g. /blog/
@@ -35,7 +35,6 @@ excerpt_separator: "<!--more-->"
 # Additionally, %o will give you the ordinal representation of the day
 #date_format: "ordinal"
 date_format: "%d. %B %Y"
-
 
 # Disqus Comments
 disqus_short_name: "mikaelkorpela"
