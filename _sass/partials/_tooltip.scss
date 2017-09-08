@@ -9,6 +9,10 @@
   border-radius:3px;
   left: -200%;
   top: 0;
+  // No tooltips for mobile
+  @media all and (max-width: 480px) {
+    display: none !important;
+  }
 }
 ._720kb-tooltip-title {
   color: $tooltip-text-color;
