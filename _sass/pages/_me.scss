@@ -1,65 +1,67 @@
 
 @-webkit-keyframes MeBgAnim {
-  0%{background-position:0% 50%}
-  50%{background-position:100% 50%}
-  100%{background-position:0% 50%}
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
 }
 @keyframes MeBgAnim {
-  0%{background-position:0% 50%}
-  50%{background-position:100% 50%}
-  100%{background-position:0% 50%}
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
 }
 
 body#me {
-	// Custom tooltip colors for this page
-	._720kb-tooltip {
-	  background: $bg-color;
-	  color: $text-color;
-	}
-	._720kb-tooltip-title {
-	  color: $text-color;
-	}
-	._720kb-tooltip-caret:before {
-	  //border: $bg-color;
-	  border-top-color: $bg-color;
-	  border-bottom-color: $bg-color;
-	}
+    // Custom tooltip colors for this page
+    ._720kb-tooltip {
+        background: $bg-color;
+        color: $text-color;
+    }
+    ._720kb-tooltip-title {
+        color: $text-color;
+    }
+    ._720kb-tooltip-caret:before {
+        //border: $bg-color;
+        border-top-color: $bg-color;
+        border-bottom-color: $bg-color;
+    }
 
-  // The image on frontpage
-	#cover {
-		background-image: url('/covers/mantymetsa.jpg');
-		background-size: cover;
-	}
-  // Custom gradient overlay crazy color thingy
-	#cover-sharp {
-	    background-size: 150% 150%;
-      -webkit-animation: MeBgAnim 15s ease forwards;
-	    animation: MeBgAnim 15s ease forwards;
-			@include gradient-directional(#0000ff, #ff0000, 45deg);
-			opacity: 0.5;
-	}
-	 #cover-blur {
-		background-color: rgba(29, 188, 100, 0.2);
-	}
+    // The image on frontpage
+    #cover {
+        background-image: url('/covers/mantymetsa.jpg');
+        background-size: cover;
+    }
+    // Custom gradient overlay crazy color thingy
+    #cover-sharp {
+        background-size: 150% 150%;
+        -webkit-animation: MeBgAnim 15s ease forwards;
+        animation: MeBgAnim 15s ease forwards;
+    @include gradient-directional(#0000ff, #ff0000, 45deg);
+        opacity: 0.5;
+    }
+    #cover-blur {
+        background-color: rgba(29, 188, 100, 0.2);
+    }
 
-	// Crazy size changes for my name
-	#page-header {
-	    .title {
-          z-index: 1; // Make texts/links clickable in header
+    // Crazy size changes for my name
+    #page-header {
+        .title {
+            z-index: 1; // Make texts/links clickable in header
 
-	        @media all and (max-width: 599px) {
-	            height: 450px;
-	        }
-	        @media all and (min-width: 600px) {
-	            height: 240px;
-	        }
-	        @media all and (min-width: 700px) {
-	            height: 240px;
-	        }
-					@media screen and (max-height: 320px) {
-						  height: 200px;
-					}
-	    }
+            @media all and (max-width: 599px) {
+                padding-left: 5px;
+                padding-right: 5px;
+                height: 450px;
+            }
+            @media all and (min-width: 600px) {
+                height: 240px;
+            }
+            @media all and (min-width: 700px) {
+                height: 240px;
+            }
+            @media screen and (max-height: 320px) {
+              height: 200px;
+            }
+        }
         h1 {
             @extend .hero-font;
             color: $bg-color;
@@ -71,14 +73,14 @@ body#me {
             @media screen and (max-width: 568px) {
                 font-size: 40px;
                 line-height: 40px;
-						}
+            }
         }
         h3 {
             font-family: 'Source Sans Pro', Helvetica, sans-serif;
         }
-	}
+    }
 
-	// Social media links and stuff like that
+    // Social media links and stuff like that
     #some {
         margin-top: 100px;
         font-size: 26px;
@@ -100,13 +102,13 @@ body#me {
         }
     }
 
-		// My email & digits
+    // My email & digits
     #contact {
         display: inline-block;
         position: relative;
         text-shadow: none;
         line-height: 40px;
-				font-size: 26px;
+        font-size: 26px;
         @extend .sans;
         @media screen and (max-width: 599px) {
             display: block;
@@ -114,11 +116,11 @@ body#me {
             color: transparent;
         }
         a {
-						color: #fff;
+            color: #fff;
         }
-    }
+  }
 
-		// About me
+    // About me
     .container .main .content {
         width: 100%;
         .narrower-content {
